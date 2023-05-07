@@ -1,5 +1,11 @@
+import Welcome from './Welcome';
+
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <>
+      <Welcome />
+    </>
+  );
 };
 
 export default Home;
