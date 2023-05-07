@@ -36,4 +36,7 @@
   .top-menu-collapse {
     @apply top-[60px];
   }
+  .swiper-nav-button {
+    @apply hidden group-hover:flex w-9 h-9 bg-[#777A7D] opacity-40 hover:opacity-70 z-10 rounded-md justify-center items-center;
+  }
 }
