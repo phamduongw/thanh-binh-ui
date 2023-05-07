@@ -1,3 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    font-family: Poppins, sans-serif;
+    background-color: #eef4fb;
+  }
+}
+
+@layer components {
+  .header {
+    @apply fixed z-10 w-full flex justify-center text-white h-[95px] 2xl:h-[105px] uppercase font-semibold 2xl:text-sm lg:text-[13px] text-xs 2xl:tracking-widest lg:tracking-wider md:tracking-wide;
+  }
+  .header-collapse {
+    @apply text-black-1 bg-white-1 md:max-2xl:h-[50px] h-[60px] md:drop-shadow-md drop-shadow-sm animate-appear;
+  }
+  .navbar {
+    @apply md:basis-3/5 md:flex md:justify-center md:gap-6 lg:gap-8 2xl:gap-10 md:h-full;
+  }
+  .navbar-item {
+    @apply h-full flex items-center;
+  }
+  .navbar-item-udl {
+    @apply relative cursor-pointer after:absolute after:-bottom-1 after:left-0 after:transition-all after:duration-400 after:h-0.5 after:w-0 after:bg-white group-hover:after:w-full;
+  }
+  .navbar-item-udl-collapse {
+    @apply after:bg-blue-1 after:-bottom-0.5;
+  }
+  .top-menu {
+    @apply absolute z-[-1] top-[-100px] left-0 bg-white-1 w-screen transition-all duration-400 px-[4vw];
+  }
+  .top-menu-collapse {
+    @apply top-[60px];
+  }
+}
