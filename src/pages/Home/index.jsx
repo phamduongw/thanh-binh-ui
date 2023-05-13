@@ -4,11 +4,11 @@ import Cards from './Cards';
 
 const Home = () => {
   return (
-    <>
+    <div className='h-[200vh]'>
       <Welcome />
       <LogoSwiper />
       <Cards />
-    </>
+    </div>
   );
 };
 

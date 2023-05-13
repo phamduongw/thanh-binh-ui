@@ -24,7 +24,7 @@ const cards = [
 ];
 const Cards = () => {
   return (
-    <div className='mt-[6vw] max-md:mt-[13vw] flex justify-center '>
+    <div className='max-md:mt-[15vw] mt-[5vw] flex justify-center '>
       <div className='md:flex gap-[30px] max-md:px-[15px]'>
         {cards.map((item) => (
           <Card

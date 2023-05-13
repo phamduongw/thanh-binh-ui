@@ -31,12 +31,12 @@
     @apply after:bg-blue-1 after:-bottom-0.5;
   }
   .top-menu {
-    @apply absolute z-[-1] top-[-100px] left-0 bg-white-1 w-screen transition-all duration-400 px-[4vw];
+    @apply absolute z-[-1] top-[-100px] left-0 bg-white-1 w-screen transition-all duration-400 flex flex-col items-center;
   }
   .top-menu-collapse {
     @apply top-[60px];
   }
   .swiper-nav-button {
-    @apply hidden group-hover:flex w-9 h-9 bg-[#777A7D] opacity-40 hover:opacity-70 z-10 rounded-md justify-center items-center;
+    @apply hidden group-hover:flex w-10 h-10 bg-[#777A7D] opacity-30 hover:opacity-100 transition-opacity duration-300 z-10 rounded-md justify-center items-center;
   }
 }
