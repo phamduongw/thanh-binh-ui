@@ -1,6 +1,6 @@
-import Card from '../../components/Card';
-import { SlRocket, SlDiamond } from 'react-icons/sl';
+import { SlDiamond, SlRocket } from 'react-icons/sl';
 import { TfiHeadphoneAlt } from 'react-icons/tfi';
+import Card from '../../components/Card';
 
 const cards = [
   {
