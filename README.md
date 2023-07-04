@@ -1,6 +1,6 @@
 ## Prerequisites
 
-- `npm` and `pnpm` should be installed
+- `npm` and `yarn` should be installed
 - `git` should be installed (recommended v2.4.11 or higher)
 
 ## Clone Repository
@@ -14,25 +14,25 @@
 ## Install Dependencies
 
 ```
- pnpm install
+ npm install
 ```
 
 ## Tailwind CSS
 
 ```
- pnpm build:css
+ npm build:css
 ```
 
 ## Development
 
 ```
- pnpm dev
+ npm dev
 ```
 
 ## Production
 
 ```
- pnpm build
+ npm build
 ```
 
 ## Thanks
