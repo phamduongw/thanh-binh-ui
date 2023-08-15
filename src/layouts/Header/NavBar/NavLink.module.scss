@@ -1,0 +1,11 @@
+@import '~/sass/main';
+
+.link {
+  @extend %flex-align-center;
+  @extend %nav-item;
+  @extend %text-hover;
+
+  @include media($lg) {
+    height: 100%;
+  }
+}
