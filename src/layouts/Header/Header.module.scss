@@ -1,0 +1,31 @@
+@import '~/sass/main';
+
+.wrapper {
+  @extend %bg-white-fc;
+  @include media($lg) {
+    height: 69px;
+  }
+
+  position: sticky;
+  top: 0;
+  height: 57px;
+  border-bottom: 1px solid $white-e6;
+  z-index: 99;
+}
+
+.container {
+  @extend %flex-space-between;
+  @extend %container;
+  @extend %bg-white-fc;
+
+  @include media($lg) {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+  height: 100%;
+}
+
+.logo {
+  align-self: center;
+}

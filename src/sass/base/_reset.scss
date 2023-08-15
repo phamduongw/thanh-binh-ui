@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  @extend %bg-white-fc;
+  @extend %text-base;
+  @extend %text-black-21;
+
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.3;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+a,
+button {
+  @extend %text-500;
+}
+
+img,
+svg {
+  vertical-align: bottom;
+}
+
+input,
+textarea {
+  @extend %border;
+  @extend %br-14;
+
+  width: 100%;
+  height: 54px;
+  padding: 0 14px;
+  border-color: $white-dd;
+  outline: none;
+  font: inherit;
+  transition: border-color 0.2s;
+  will-change: border-color;
+
+  &:hover {
+    @extend %bc-gray-9c;
+  }
+
+  &:focus {
+    @extend %bc-blue-43;
+  }
+
+  &::placeholder {
+    @extend %text-gray-9c;
+  }
+}
+
+h1 {
+  @include media($md) {
+    font-size: 4.359rem;
+  }
+
+  font-size: 3.906rem;
+}
+
+h2 {
+  @include media($md) {
+    font-size: 3.516rem;
+  }
+
+  font-size: 3.125rem;
+}
+
+h3 {
+  @include media($md) {
+    font-size: 2.813rem;
+  }
+
+  font-size: 2.5rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}

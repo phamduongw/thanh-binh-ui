@@ -1,0 +1,47 @@
+@import '~/sass/main';
+
+.button {
+  @extend %border;
+  @extend %br-14;
+
+  @include media($sm) {
+    display: inline-block;
+  }
+
+  display: block;
+  padding: 22px 24px;
+  line-height: 1;
+  text-align: center;
+  transition: background-color 0.2s, border-color 0.2s, scale 0.2s;
+  will-change: background-color, border-color, scale;
+
+  &:hover {
+    scale: 0.98;
+  }
+
+  &.primary {
+    @extend %bg-blue-2e;
+    @extend %text-white-fc;
+    @extend %bc-blue-2e;
+
+    &:hover {
+      @extend %bg-blue-43;
+      @extend %bc-blue-43;
+    }
+  }
+
+  &.secondary {
+    @extend %bg-white-fc;
+    @extend %bc-gray-9c;
+
+    &:hover {
+      @extend %bc-blue-2e;
+      @extend %text-blue-2e;
+    }
+  }
+
+  &.small {
+    padding: 14px 16px;
+    border-radius: 12px;
+  }
+}
