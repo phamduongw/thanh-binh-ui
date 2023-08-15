@@ -12,23 +12,17 @@ const Overlay = () => {
   const dispatch = useDispatch();
   const isMenuOpen = useSelector(isMenuOpenSelector);
 
+  const disable = {
+    disable: !isMenuOpen,
+  };
+
   const handleClick = useCallback(() => {
     dispatch(closeMenu());
   }, []);
 
   return (
-    <div
-      onClick={handleClick}
-      className={cx('header', {
-        enable: isMenuOpen,
-      })}
-    >
-      <div
-        onClick={handleClick}
-        className={cx('inset', {
-          enable: isMenuOpen,
-        })}
-      />
+    <div onClick={handleClick} className={cx('header', disable)}>
+      <div onClick={handleClick} className={cx('inset', disable)} />
     </div>
   );
 };

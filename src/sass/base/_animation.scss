@@ -1,8 +1,20 @@
-%text-hover {
+%transition-color {
   transition: color 0.2s;
   will-change: color;
+}
+
+%text-hover-blue-2e {
+  @extend %transition-color;
 
   &:hover {
     @extend %text-blue-2e;
+  }
+}
+
+%text-hover-blue-43 {
+  @extend %transition-color;
+
+  &:hover {
+    @extend %text-blue-43;
   }
 }

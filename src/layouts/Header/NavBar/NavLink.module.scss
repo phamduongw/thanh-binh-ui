@@ -1,9 +1,10 @@
 @import '~/sass/main';
 
 .link {
-  @extend %flex-align-center;
+  @extend %flex;
+  @extend %align-center;
   @extend %nav-item;
-  @extend %text-hover;
+  @extend %text-hover-blue-2e;
 
   @include media($lg) {
     height: 100%;

@@ -1,0 +1,8 @@
+@import '~/sass/main';
+
+.wrapper {
+  @extend %br-99;
+  @extend %bg-white-e6;
+
+  height: 2px;
+}

@@ -1,0 +1,45 @@
+@import '~/sass/main';
+
+.wrapper {
+  @extend %flex-col;
+  @extend %gap-16;
+
+  max-width: 448px;
+}
+
+.form {
+  @extend %relative;
+}
+
+.send-btn {
+  @extend %absolute;
+
+  right: 0;
+  width: 55px;
+  height: 55px;
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(1.3);
+  }
+}
+
+.message {
+  @extend %absolute;
+  @extend %top-0;
+  @extend %w-full;
+  @extend %text-blue-2e;
+  @extend %bg-white-f4;
+  @extend %br-14;
+  @extend %text-center;
+
+  padding: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.open {
+  opacity: 1;
+  visibility: visible;
+}

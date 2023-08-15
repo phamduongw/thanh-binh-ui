@@ -1,17 +1,37 @@
+// Position
+
+%relative {
+  position: relative;
+}
+
+%absolute {
+  position: absolute;
+}
+
+// Position properties
+
+%top-0 {
+  top: 0;
+}
+
+// Box model properties
+
+%w-full {
+  width: 100%;
+}
+
+%h-full {
+  height: 100%;
+}
+
 // Display
+
+%hidden {
+  display: none;
+}
 
 %flex {
   display: flex;
-}
-
-%flex-center {
-  @extend %flex-align-center;
-  justify-content: center;
-}
-
-%flex-align-center {
-  @extend %flex;
-  align-items: center;
 }
 
 %flex-col {
@@ -19,15 +39,41 @@
   flex-direction: column;
 }
 
-%flex-space-between {
-  @extend %flex;
+%justify-center {
+  justify-content: center;
+}
+
+%justify-between {
   justify-content: space-between;
+}
+
+%align-center {
+  align-items: center;
+}
+
+%flex-center {
+  @extend %flex;
+  @extend %justify-center;
+  @extend %align-center;
+}
+
+%grid {
+  display: grid;
 }
 
 // Gap
 
+%column-gap-16 {
+  grid-column-gap: 16px;
+}
+
+%row-gap-16 {
+  grid-row-gap: 16px;
+}
+
 %gap-16 {
-  gap: 16px;
+  @extend %column-gap-16;
+  @extend %row-gap-16;
 }
 
 // Padding
@@ -81,6 +127,10 @@
 
 %text-blue-2e {
   color: $blue-2e;
+}
+
+%text-blue-43 {
+  color: $blue-43;
 }
 
 %text-gray-71 {
@@ -162,12 +212,31 @@
   font-weight: 500;
 }
 
-// Opacity & Visibility
+%text-400 {
+  font-weight: 400;
+}
 
-// %hidden {
-//   opacity: 0;
-//   visibility: hidden;
-// }
+// Font Style
+
+%text-italic {
+  font-style: italic;
+}
+
+// Text Algin
+
+%text-center {
+  text-align: center;
+}
+
+// Z-index
+
+%z-index-99 {
+  z-index: 99;
+}
+
+%z-index--1 {
+  z-index: -1;
+}
 
 // Customize
 

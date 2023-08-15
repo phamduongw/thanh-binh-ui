@@ -1,19 +1,19 @@
 @import '~/sass/main';
 
 .wrapper {
+  @extend %relative;
   @extend %flex-col;
+  @extend %justify-center;
+  @extend %h-full;
 
   @include media($lg) {
     display: none;
   }
 
-  position: relative;
-  justify-content: center;
   gap: 5px;
-  height: 100%;
 }
 
-.menu-bar {
+.bar {
   @extend %br-99;
   @extend %bg-blue-2e;
 

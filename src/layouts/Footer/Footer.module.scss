@@ -1,1 +1,24 @@
 @import '~/sass/main';
+
+.wrapper {
+  @include media($lg) {
+    padding: 120px 0;
+  }
+  @include media($md, $lg) {
+    padding: 72px 0;
+  }
+
+  @include media($sm, $md) {
+    padding: 64px 0;
+  }
+
+  padding: 56px 0;
+  box-shadow: 0 -12px 50px -4px rgba(33, 41, 77, 0.06);
+}
+
+.container {
+  @extend %flex-col;
+  @extend %container;
+
+  gap: 64px;
+}

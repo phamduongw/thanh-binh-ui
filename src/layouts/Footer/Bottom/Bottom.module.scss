@@ -1,0 +1,95 @@
+@import '~/sass/main';
+
+.link-item {
+  @extend %text-400;
+}
+
+.wrapper {
+  @extend %flex;
+  @extend %justify-between;
+
+  @include media(0, $lg) {
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+  }
+
+  min-height: 232px;
+}
+
+.left {
+  @extend %flex-col;
+  @extend %gap-16;
+
+  @include media(0, $lg) {
+    align-items: center;
+  }
+
+  p {
+    @include media(0, $lg) {
+      text-align: center;
+    }
+
+    .link-item {
+      @extend %text-blue-2e;
+      @extend %text-hover-blue-43;
+    }
+  }
+}
+
+.social-wrap {
+  @extend %flex;
+
+  gap: 8px;
+}
+
+.social-item {
+  @extend %flex-center;
+  @extend %bg-blue-2e;
+  @extend %br-99;
+
+  width: 34px;
+  height: 34px;
+  transition: background-color 0.2s;
+  will-change: background-color;
+
+  &:hover {
+    @extend %bg-blue-43;
+  }
+}
+
+.right {
+  @extend %flex;
+
+  flex-wrap: wrap;
+  gap: 48px 56px;
+}
+
+.link-group {
+  @extend %flex-col;
+  @extend %gap-16;
+}
+
+%link-grid {
+  @extend %grid;
+  @extend %row-gap-16;
+
+  grid-column-gap: 40px;
+  justify-items: start;
+}
+
+.link-wrap {
+  @extend %link-grid;
+
+  grid-template-columns: repeat(2, auto);
+
+  .link-item:last-child {
+    @extend %text-blue-2e;
+    @extend %text-700;
+    @extend %text-italic;
+  }
+}
+
+.link-column {
+  @extend %link-grid;
+}

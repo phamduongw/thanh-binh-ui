@@ -38,7 +38,7 @@ const MenuButton = () => {
       {ANIMATIONS.map(([enable, disable]) => (
         <span
           key={enable}
-          className={cx('menu-bar', {
+          className={cx('bar', {
             [`${isMenuOpen ? enable : disable}`]: isAnimated,
           })}
         />
