@@ -9,15 +9,17 @@ const Paragraph = ({
   gray71 = false,
   gray9c = false,
   children,
-}) => {
-  const classes = cx({
-    large,
-    small,
-    gray71,
-    gray9c,
-  });
-
-  return <p className={classes}>{children}</p>;
-};
+}) => (
+  <p
+    className={cx({
+      large,
+      small,
+      gray71,
+      gray9c,
+    })}
+  >
+    {children}
+  </p>
+);
 
 export default Paragraph;

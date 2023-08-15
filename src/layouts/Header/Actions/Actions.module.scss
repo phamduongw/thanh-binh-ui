@@ -1,13 +1,14 @@
 @import '~/sass/main';
 
 .desktop {
-  @extend %flex-align-center;
+  @extend %flex;
+  @extend %align-center;
+  @extend %gap-16;
 
   @include media(0, $lg) {
     display: none;
   }
 
-  gap: 16px;
   justify-self: end;
 }
 
@@ -20,9 +21,10 @@
 }
 
 .contact {
-  @extend %flex-align-center;
+  @extend %flex;
+  @extend %align-center;
   @extend %nav-item;
-  @extend %text-hover;
+  @extend %text-hover-blue-2e;
 
   @include media($lg) {
     height: 100%;

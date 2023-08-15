@@ -1,5 +1,11 @@
 @import '~/sass/main';
 
-.highlight {
+.highlight-blue-43 {
+  @extend %text-blue-43;
+}
+
+.title {
   @extend %text-blue-2e;
+  @extend %text-large;
+  @extend %text-500;
 }

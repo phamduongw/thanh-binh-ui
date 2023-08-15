@@ -1,20 +1,25 @@
 @import '~/sass/main';
 
 .wrapper {
-  position: relative;
+  @extend %relative;
 }
 
 .toggle {
-  @extend %flex-align-center;
+  @extend %flex;
+  @extend %align-center;
+  @extend %w-full;
   @extend %nav-item;
-  @extend %text-hover;
+  @extend %transition-color;
 
   @include media($lg) {
     height: 100%;
+
+    &:hover {
+      color: $blue-2e;
+    }
   }
 
   gap: 8px;
-  width: 100%;
 }
 
 .rotate {
@@ -86,17 +91,17 @@
   max-height: 394px;
 }
 
-.content {
-  @include media($sm) {
-    grid-template-columns: max-content max-content;
-  }
+.service-wrap {
+  @extend %grid;
 
-  display: grid;
-  grid-template-columns: 1fr;
+  @include media($sm) {
+    grid-template-columns: repeat(2, max-content);
+  }
 }
 
-.link {
-  @extend %flex-align-center;
+.service-item {
+  @extend %flex;
+  @extend %align-center;
 
   gap: 12px;
   padding: 16px 24px;
@@ -110,7 +115,7 @@
   }
 }
 
-.view-all {
+.view-all-btn {
   @include media(0, $lg) {
     margin-bottom: 16px;
   }

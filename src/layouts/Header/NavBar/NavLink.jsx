@@ -30,7 +30,7 @@ const NavLink = memo(({ pathname, handleCloseMenu }) =>
       key={name}
       to={to}
       className={cx('link', {
-        highlight: to == pathname,
+        'highlight-blue-43': to == pathname,
       })}
       onClick={handleCloseMenu}
     >

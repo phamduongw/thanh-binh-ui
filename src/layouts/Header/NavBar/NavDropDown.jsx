@@ -53,7 +53,7 @@ const SERVICES = [
 
 const cx = classNames.bind(styles);
 
-const ServiceList = memo(
+const DropDownServices = memo(
   forwardRef(({ isAnimated, isServicesOpen, handleCloseMenu }, ref) => (
     <div
       ref={ref}
@@ -62,14 +62,14 @@ const ServiceList = memo(
         open: isServicesOpen,
       })}
     >
-      <ul className={cx('content')}>
+      <ul className={cx('service-wrap')}>
         {SERVICES.map(({ to, name, icon: Icon }) => (
           <li key={name}>
             <Button
               onClick={handleCloseMenu}
               to={to}
-              className={cx('link', {
-                highlight: to == window.location.pathname,
+              className={cx('service-item', {
+                'highlight-blue-43': to == window.location.pathname,
               })}
             >
               <Icon />
@@ -84,7 +84,7 @@ const ServiceList = memo(
         button
         secondary
         small
-        className={cx('view-all')}
+        className={cx('view-all-btn')}
       >
         View All Services
       </Button>
@@ -92,7 +92,7 @@ const ServiceList = memo(
   )),
 );
 
-ServiceList.displayName = 'ServiceList';
+DropDownServices.displayName = 'DropDownServices';
 
 const NavDropDown = memo(({ isAnimated, pathname, handleCloseMenu }) => {
   const toggleRef = useRef();
@@ -125,7 +125,7 @@ const NavDropDown = memo(({ isAnimated, pathname, handleCloseMenu }) => {
         ref={toggleRef}
         onClick={handleToggleServices}
         className={cx('toggle', {
-          highlight: pathname.includes('services'),
+          'highlight-blue-43': pathname.includes('services'),
         })}
       >
         <span>{config.routes.services.title}</span>
@@ -136,7 +136,7 @@ const NavDropDown = memo(({ isAnimated, pathname, handleCloseMenu }) => {
           })}
         />
       </Button>
-      <ServiceList
+      <DropDownServices
         ref={dropDownRef}
         isAnimated={isAnimated}
         isServicesOpen={isServicesOpen}

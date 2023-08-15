@@ -1,18 +1,20 @@
+@import '~/sass/main';
+
 .header {
-  position: absolute;
-  display: none;
+  @extend %absolute;
+  @extend %h-full;
+
   left: 0;
   right: 0;
-  height: 100%;
 }
 
 .inset {
+  @extend %z-index--1;
+
   position: fixed;
-  display: none;
   inset: 0;
-  z-index: -1;
 }
 
-.enable {
-  display: block;
+.disable {
+  @extend %hidden;
 }
