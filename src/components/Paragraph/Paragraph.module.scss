@@ -1,0 +1,17 @@
+@import '~/sass/main';
+
+.large {
+  @extend %text-large;
+}
+
+.small {
+  @extend %text-small;
+}
+
+.gray71 {
+  @extend %text-gray-71;
+}
+
+.gray9c {
+  @extend %text-gray-9c;
+}

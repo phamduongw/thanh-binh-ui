@@ -1,0 +1,183 @@
+// Display
+
+%flex {
+  display: flex;
+}
+
+%flex-center {
+  @extend %flex-align-center;
+  justify-content: center;
+}
+
+%flex-align-center {
+  @extend %flex;
+  align-items: center;
+}
+
+%flex-col {
+  @extend %flex;
+  flex-direction: column;
+}
+
+%flex-space-between {
+  @extend %flex;
+  justify-content: space-between;
+}
+
+// Gap
+
+%gap-16 {
+  gap: 16px;
+}
+
+// Padding
+
+%padding {
+  @include media($lg) {
+    padding-left: $px-lg;
+    padding-right: $px-lg;
+  }
+
+  @include media($md, $lg) {
+    padding-left: $px-md;
+    padding-right: $px-md;
+  }
+
+  padding-left: $px-sm;
+  padding-right: $px-sm;
+}
+
+// Background Color
+
+%bg-black-21 {
+  background-color: $black-21;
+}
+
+%bg-blue-2e {
+  background-color: $blue-2e;
+}
+
+%bg-blue-43 {
+  background-color: $blue-43;
+}
+
+%bg-white-e6 {
+  background-color: $white-e6;
+}
+
+%bg-white-fc {
+  background-color: $white-fc;
+}
+
+%bg-white-f4 {
+  background-color: $white-f4;
+}
+
+// Text Color
+
+%text-black-21 {
+  color: $black-21;
+}
+
+%text-blue-2e {
+  color: $blue-2e;
+}
+
+%text-gray-71 {
+  color: $gray-71;
+}
+
+%text-gray-9c {
+  color: $gray-9c;
+}
+
+%text-white-fc {
+  color: $white-fc;
+}
+
+// Border
+
+%border {
+  border-width: 1px;
+  border-style: solid;
+}
+
+// Border Color
+
+%bc-blue-2e {
+  border-color: $blue-2e;
+}
+
+%bc-gray-9c {
+  border-color: $gray-9c;
+}
+
+%bc-blue-43 {
+  border-color: $blue-43;
+}
+
+// Border Radius
+
+%br-14 {
+  border-radius: 14px;
+}
+
+%br-99 {
+  border-radius: 99px;
+}
+
+// Font Size
+
+%text-large {
+  @include media($md) {
+    font-size: 2.25rem;
+  }
+
+  font-size: 2rem;
+}
+
+%text-base {
+  @include media($md) {
+    font-size: 1.8rem;
+  }
+
+  font-size: 1.6rem;
+}
+
+%text-small {
+  @include media($md) {
+    font-size: 1.414rem;
+  }
+
+  font-size: 1.28rem;
+}
+
+// Font Weight
+
+%text-700 {
+  font-weight: 700;
+}
+
+%text-500 {
+  font-weight: 500;
+}
+
+// Opacity & Visibility
+
+// %hidden {
+//   opacity: 0;
+//   visibility: hidden;
+// }
+
+// Customize
+
+%container {
+  @extend %padding;
+  max-width: $container-max-width;
+  margin: 0 auto;
+}
+
+%nav-item {
+  height: 60px;
+  font-size: 1.8rem;
+}

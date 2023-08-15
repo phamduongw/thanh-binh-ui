@@ -1,0 +1,13 @@
+// Responsive
+
+@mixin media($from, $to: null) {
+  @if $to == null {
+    @media (min-width: $from) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $from) and (max-width: calc($to - 1px)) {
+      @content;
+    }
+  }
+}

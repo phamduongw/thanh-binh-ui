@@ -1,0 +1,20 @@
+@import '~/sass/main';
+
+.wrapper {
+  width: fit-content;
+  transition: filter 0.2s, scale 0.2s;
+  will-change: filter, scale;
+
+  &:hover {
+    filter: brightness(1.15);
+    scale: 0.98;
+  }
+}
+
+.logo {
+  @include media($lg) {
+    height: 44px;
+  }
+
+  height: 40px;
+}
