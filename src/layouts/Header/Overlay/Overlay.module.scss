@@ -1,0 +1,18 @@
+.header {
+  position: absolute;
+  display: none;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+.inset {
+  position: fixed;
+  display: none;
+  inset: 0;
+  z-index: -1;
+}
+
+.enable {
+  display: block;
+}

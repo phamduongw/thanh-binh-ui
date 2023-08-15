@@ -1,0 +1,34 @@
+@import '~/sass/main';
+
+.desktop {
+  @extend %flex-align-center;
+
+  @include media(0, $lg) {
+    display: none;
+  }
+
+  gap: 16px;
+  justify-self: end;
+}
+
+.responsive {
+  @include media($lg) {
+    display: none;
+  }
+
+  display: block;
+}
+
+.contact {
+  @extend %flex-align-center;
+  @extend %nav-item;
+  @extend %text-hover;
+
+  @include media($lg) {
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  gap: 6px;
+  margin-bottom: 6px;
+}

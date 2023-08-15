@@ -1,0 +1,104 @@
+@import '~/sass/main';
+
+.wrapper {
+  @extend %flex-col;
+
+  @include media($lg) {
+    display: none;
+  }
+
+  position: relative;
+  justify-content: center;
+  gap: 5px;
+  height: 100%;
+}
+
+.menu-bar {
+  @extend %br-99;
+  @extend %bg-blue-2e;
+
+  width: 32px;
+  height: 3px;
+
+  &.open {
+    &-top {
+      animation: open-top 0.3s ease-in forwards;
+    }
+    &-middle {
+      animation: open-middle 0.15s ease-in forwards;
+    }
+    &-bottom {
+      animation: open-bottom 0.3s ease-in forwards;
+    }
+  }
+
+  &.close {
+    &-top {
+      animation: close-top 0.3s ease-in reverse;
+    }
+    &-middle {
+      animation: close-middle 0.3s ease-in;
+    }
+    &-bottom {
+      animation: close-bottom 0.3s ease-in reverse;
+    }
+  }
+}
+
+@keyframes open-top {
+  50% {
+    transform: translateY(calc(100% + 5px));
+  }
+
+  100% {
+    transform: translateY(calc(100% + 5px)) rotate(-45deg);
+  }
+}
+
+@keyframes close-top {
+  50% {
+    transform: translateY(calc(100% + 5px));
+  }
+
+  100% {
+    transform: translateY(calc(100% + 5px)) rotate(-45deg);
+  }
+}
+
+@keyframes open-middle {
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes close-middle {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes open-bottom {
+  50% {
+    transform: translateY(calc(-100% - 5px));
+  }
+
+  100% {
+    transform: translateY(calc(-100% - 5px)) rotate(45deg);
+  }
+}
+
+@keyframes close-bottom {
+  50% {
+    transform: translateY(calc(-100% - 5px));
+  }
+
+  100% {
+    transform: translateY(calc(-100% - 5px)) rotate(45deg);
+  }
+}
