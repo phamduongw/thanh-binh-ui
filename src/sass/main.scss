@@ -7,5 +7,7 @@
 @import 'base/utilities.scss';
 
 main {
-  height: 200vh;
+  @extend %container;
+
+  height: 100vh;
 }

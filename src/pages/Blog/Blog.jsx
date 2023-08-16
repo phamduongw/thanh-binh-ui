@@ -1,8 +1,14 @@
-import usePageTitle from '~/hooks/usePageTitle';
+import { Helmet } from 'react-helmet-async';
 
 const Blog = ({ title }) => {
-  usePageTitle(title);
-  return <main>Blog</main>;
+  return (
+    <main>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
+      Blog
+    </main>
+  );
 };
 
 export default Blog;

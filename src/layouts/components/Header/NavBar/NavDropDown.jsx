@@ -125,7 +125,7 @@ const NavDropDown = memo(({ isAnimated, pathname, handleCloseMenu }) => {
         ref={toggleRef}
         onClick={handleToggleServices}
         className={cx('toggle', {
-          'highlight-blue-43': pathname.includes('services'),
+          'highlight-blue-43': pathname.includes(config.routes.services.path),
         })}
       >
         <span>{config.routes.services.title}</span>

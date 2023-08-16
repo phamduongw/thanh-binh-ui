@@ -1,7 +1,7 @@
 @import '~/sass/main';
 
 .wrapper {
-  @extend %padding;
+  @extend %container-padding;
   @extend %bg-white-fc;
 
   @include media($lg) {
