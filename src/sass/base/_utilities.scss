@@ -78,7 +78,7 @@
 
 // Padding
 
-%padding {
+%container-padding {
   @include media($lg) {
     padding-left: $px-lg;
     padding-right: $px-lg;
@@ -91,6 +91,12 @@
 
   padding-left: $px-sm;
   padding-right: $px-sm;
+}
+
+// Margin
+
+%margin-0-auto {
+  margin: 0 auto;
 }
 
 // Background Color
@@ -241,9 +247,10 @@
 // Customize
 
 %container {
-  @extend %padding;
+  @extend %container-padding;
+  @extend %margin-0-auto;
+
   max-width: $container-max-width;
-  margin: 0 auto;
 }
 
 %nav-item {

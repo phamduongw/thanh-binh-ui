@@ -1,1 +1,26 @@
 @import '~/sass/main';
+
+.wrapper {
+  @extend %container-padding;
+}
+
+.container {
+  @extend %flex-col;
+  @extend %justify-center;
+  @extend %text-center;
+  @extend %margin-0-auto;
+
+  @include media($md) {
+    max-width: 464px;
+  }
+
+  gap: 24px;
+  max-width: fit-content;
+  height: 100vh;
+}
+
+.title {
+  @extend %flex-col;
+  @extend %align-center;
+  @extend %gap-16;
+}

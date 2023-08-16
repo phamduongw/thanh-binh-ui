@@ -33,10 +33,6 @@ const routes = {
     path: '/contact',
     title: 'Blog',
   },
-  notFound: {
-    path: '/*',
-    title: 'Not Found',
-  },
 };
 
 export default routes;

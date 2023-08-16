@@ -1,33 +1,35 @@
 import { Routes, Route } from 'react-router-dom';
 import { publicRoutes } from './routes';
 
-import Header from './layouts/Header';
-import Footer from './layouts/Footer';
+import DefaultLayout from './layouts/DefaultLayout';
+
+import NotFound from './pages/NotFound';
+
+const renderLayout = (Component, title) => <Component title={title} />;
 
 const App = () => (
-  <>
-    <Header />
-    <Routes>
-      {publicRoutes.map(({ path, title, component: Page, slugs }) => {
-        if (slugs) {
-          const { parent: Parent, child: Child } = Page;
-          return (
-            <Route key={path} path={path}>
-              <Route index element={<Parent title={title} />} />
-              {slugs.map((slug) => (
-                <Route key={slug} path={slug} element={<Child slug={slug} />} />
-              ))}
-            </Route>
-          );
-        } else {
-          return (
-            <Route key={path} path={path} element={<Page title={title} />} />
-          );
-        }
-      })}
-    </Routes>
-    <Footer />
-  </>
+  <Routes>
+    <Route element={<DefaultLayout />}>
+      {publicRoutes.map(({ path, title, component, slugs }) =>
+        slugs ? (
+          <Route key={path} path={path}>
+            <Route index element={renderLayout(component.parent, title)} />
+            <Route
+              path={path + '/:slug'}
+              element={renderLayout(component.child)}
+            />
+          </Route>
+        ) : (
+          <Route
+            key={path}
+            path={path}
+            element={renderLayout(component, title)}
+          />
+        ),
+      )}
+    </Route>
+    <Route path="*" element={<NotFound />} />
+  </Routes>
 );
 
 export default App;

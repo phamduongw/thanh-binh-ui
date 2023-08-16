@@ -43,11 +43,6 @@ const publicRoutes = [
     title: config.routes.contact.title,
     component: Contact,
   },
-  {
-    path: config.routes.notFound.path,
-    title: config.routes.notFound.title,
-    component: NotFound,
-  },
 ];
 
 const privateRoutes = [];
