@@ -1,14 +1,14 @@
 import { Helmet } from 'react-helmet-async';
 
-const Home = ({ title }) => {
-  return (
-    <main>
-      <Helmet>
-        <title>{title}</title>
-      </Helmet>
-      Home
-    </main>
-  );
-};
+import Hero from './Hero';
+
+const Home = ({ title }) => (
+  <main>
+    <Helmet>
+      <title>{title}</title>
+    </Helmet>
+    <Hero />
+  </main>
+);
 
 export default Home;

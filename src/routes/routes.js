@@ -5,7 +5,6 @@ import Blog from '~/pages/Blog';
 import BlogDetail from '~/pages/Blog/BlogDetail/';
 import Contact from '~/pages/Contact';
 import Home from '~/pages/Home';
-import NotFound from '~/pages/NotFound';
 import ServiceDetail from '~/pages/Services/ServiceDetail';
 import Services from '~/pages/Services';
 

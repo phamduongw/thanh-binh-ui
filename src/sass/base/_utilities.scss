@@ -43,12 +43,24 @@
   justify-content: center;
 }
 
+%justify-self-center {
+  justify-self: center;
+}
+
 %justify-between {
   justify-content: space-between;
 }
 
+%justify-self-end {
+  justify-self: end;
+}
+
 %align-center {
   align-items: center;
+}
+
+%algin-self-center {
+  align-self: center;
 }
 
 %flex-center {
