@@ -27,7 +27,7 @@ const cx = classNames.bind(styles);
 const NavLink = memo(({ pathname, handleCloseMenu }) =>
   NAV_LINK_ITEMS.map(({ to, name }) => (
     <Button
-      key={name}
+      key={to}
       to={to}
       className={cx('link', {
         'highlight-blue-43': to == pathname,

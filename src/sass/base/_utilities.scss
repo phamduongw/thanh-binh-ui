@@ -26,7 +26,7 @@
 
 // Display
 
-%hidden {
+%display-none {
   display: none;
 }
 
@@ -75,6 +75,32 @@
 
 // Gap
 
+%column-gap-8 {
+  grid-column-gap: 8px;
+}
+
+%row-gap-8 {
+  grid-row-gap: 8px;
+}
+
+%gap-8 {
+  @extend %column-gap-8;
+  @extend %row-gap-8;
+}
+
+%column-gap-12 {
+  grid-column-gap: 12px;
+}
+
+%row-gap-12 {
+  grid-row-gap: 12px;
+}
+
+%gap-12 {
+  @extend %column-gap-12;
+  @extend %row-gap-12;
+}
+
 %column-gap-16 {
   grid-column-gap: 16px;
 }
@@ -88,17 +114,30 @@
   @extend %row-gap-16;
 }
 
+%column-gap-24 {
+  grid-column-gap: 24px;
+}
+
+%row-gap-24 {
+  grid-row-gap: 24px;
+}
+
+%gap-24 {
+  @extend %column-gap-24;
+  @extend %row-gap-24;
+}
+
 // Padding
 
 %container-padding {
+  @include media($md) {
+    padding-left: $px-md;
+    padding-right: $px-md;
+  }
+
   @include media($lg) {
     padding-left: $px-lg;
     padding-right: $px-lg;
-  }
-
-  @include media($md, $lg) {
-    padding-left: $px-md;
-    padding-right: $px-md;
   }
 
   padding-left: $px-sm;
@@ -184,14 +223,28 @@
   border-color: $blue-43;
 }
 
+%bc-white-e6 {
+  border-color: $white-e6;
+}
+
 // Border Radius
 
 %br-14 {
   border-radius: 14px;
 }
 
+%br-32 {
+  border-radius: 32px;
+}
+
 %br-99 {
   border-radius: 99px;
+}
+
+// Box Shadow
+
+%card-box-shadow {
+  box-shadow: $card-box-shadow;
 }
 
 // Font Size
@@ -244,6 +297,10 @@
 
 %text-center {
   text-align: center;
+}
+
+%text-left {
+  text-align: left;
 }
 
 // Z-index

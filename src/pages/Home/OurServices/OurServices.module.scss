@@ -1,0 +1,83 @@
+@import '~/sass/main';
+
+.wrapper {
+  @extend %bg-white-f4;
+}
+
+.content {
+  @extend %flex-col;
+  @extend %align-center;
+  @extend %container;
+
+  gap: 48px;
+}
+
+.heading {
+  @extend %flex-col;
+  @extend %gap-8;
+  @extend %text-center;
+
+  max-width: 648px;
+}
+
+.service-list {
+  @extend %grid;
+  @extend %gap-24;
+
+  @include media($md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media($lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.service-card {
+  @extend %flex-col;
+  @extend %justify-between;
+  @extend %gap-16;
+  @extend %h-full;
+  @extend %bg-white-fc;
+  @extend %border;
+  @extend %bc-white-e6;
+  @extend %br-32;
+  @extend %card-box-shadow;
+  @extend %text-left;
+
+  @include media($sm) {
+    padding: 48px 32px;
+  }
+
+  @include media($lg) {
+    padding: 48px 40px;
+  }
+
+  padding: 40px 32px;
+  transition: border-color 0.2s, transform 0.2s;
+  will-change: border-color, transform;
+
+  &:hover {
+    @extend %bc-blue-2e;
+    transform: translateY(-4px);
+  }
+}
+
+.card-detail {
+  @extend %flex-col;
+  @extend %gap-16;
+}
+
+.card-heading {
+  @extend %flex-col;
+  @extend %gap-12;
+}
+
+.learn-more-wrap {
+  @extend %flex;
+  @extend %align-center;
+  @extend %text-blue-2e;
+  @extend %text-500;
+
+  gap: 4px;
+}

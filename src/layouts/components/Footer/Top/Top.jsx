@@ -5,6 +5,7 @@ import styles from './Top.module.scss';
 
 import Button from '~/components/Button';
 import Paragraph from '~/components/Paragraph';
+
 import { SendIcon } from '~/components/Icons';
 
 const cx = classNames.bind(styles);
@@ -45,7 +46,7 @@ const Form = () => {
 
 const Top = () => (
   <div className={cx('wrapper')}>
-    <div className="title">Subscribe to Our Newsletter</div>
+    <div className="footer-title">Subscribe to Our Newsletter</div>
     <Paragraph gray9c>
       Stay in the know! Subscribe for news and our latest promotions!
     </Paragraph>

@@ -39,8 +39,7 @@
 
 .social-wrap {
   @extend %flex;
-
-  gap: 8px;
+  @extend %gap-8;
 }
 
 .social-item {
