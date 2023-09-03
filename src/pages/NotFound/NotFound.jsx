@@ -5,6 +5,7 @@ import classNames from 'classnames/bind';
 import styles from './NotFound.module.scss';
 
 import Button from '~/components/Button';
+
 import { NotFoundIcon } from '~/components/Icons';
 
 const cx = classNames.bind(styles);

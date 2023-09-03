@@ -7,6 +7,7 @@
 .container {
   @extend %flex-col;
   @extend %justify-center;
+  @extend %gap-24;
   @extend %text-center;
   @extend %margin-0-auto;
 
@@ -14,7 +15,6 @@
     max-width: 464px;
   }
 
-  gap: 24px;
   max-width: fit-content;
   height: 100vh;
 }

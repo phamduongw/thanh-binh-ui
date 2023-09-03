@@ -10,46 +10,12 @@ import {
 } from '~/redux/slice/headerSlice';
 
 import Button from '~/components/Button';
-import {
-  ServiceIcon1,
-  ServiceIcon2,
-  ServiceIcon3,
-  ServiceIcon4,
-  ServiceIcon5,
-  DropDownIcon,
-} from '~/components/Icons';
+
+import { DropDownIcon } from '~/components/Icons';
+
+import SERVICES from '~/data/SERVICES';
 
 import config from '~/config';
-
-const PATH = config.routes.services.path + '/';
-
-const SERVICES = [
-  {
-    to: PATH + config.routes.services.slugs[0],
-    name: 'Office Space',
-    icon: ServiceIcon1,
-  },
-  {
-    to: PATH + config.routes.services.slugs[1],
-    name: 'Dedicated Desk',
-    icon: ServiceIcon2,
-  },
-  {
-    to: PATH + config.routes.services.slugs[2],
-    name: 'Coworking Space',
-    icon: ServiceIcon3,
-  },
-  {
-    to: PATH + config.routes.services.slugs[3],
-    name: 'Virtual Office',
-    icon: ServiceIcon4,
-  },
-  {
-    to: PATH + config.routes.services.slugs[4],
-    name: 'Meeting Room',
-    icon: ServiceIcon5,
-  },
-];
 
 const cx = classNames.bind(styles);
 
@@ -63,8 +29,8 @@ const DropDownServices = memo(
       })}
     >
       <ul className={cx('service-wrap')}>
-        {SERVICES.map(({ to, name, icon: Icon }) => (
-          <li key={name}>
+        {SERVICES.map(({ to, title, icon: Icon }) => (
+          <li key={to}>
             <Button
               onClick={handleCloseMenu}
               to={to}
@@ -72,8 +38,8 @@ const DropDownServices = memo(
                 'highlight-blue-43': to == window.location.pathname,
               })}
             >
-              <Icon />
-              <span>{name}</span>
+              <Icon width={32} />
+              <span>{title}</span>
             </Button>
           </li>
         ))}

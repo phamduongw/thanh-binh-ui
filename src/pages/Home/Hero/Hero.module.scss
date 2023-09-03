@@ -2,6 +2,16 @@
 
 .wrapper {
   @extend %grid;
+  @extend %container;
+
+  @include media($sm) {
+    gap: 22px;
+    padding-top: 32px;
+  }
+
+  @include media($md) {
+    padding-top: 36px;
+  }
 
   @include media($lg) {
     grid-template-columns: repeat(2, 1fr);
@@ -9,35 +19,19 @@
     padding-top: 60px;
   }
 
-  @include media($sm, $lg) {
-    gap: 22px;
-  }
-
-  @include media($md, $lg) {
-    padding-top: 36px;
-  }
-
-  @include media($sm, $md) {
-    padding-top: 32px;
-  }
-
-  grid-template-columns: 1fr;
   gap: 40px;
   padding-top: 28px;
 
   img {
     @extend %justify-self-center;
 
-    @include media($md) {
-      max-width: 100%;
-    }
-
-    @include media($sm, $md) {
+    @include media($sm) {
+      width: 602px;
       max-width: 90%;
     }
 
-    @include media($sm) {
-      width: 602px;
+    @include media($md) {
+      max-width: 100%;
     }
 
     width: 600px;

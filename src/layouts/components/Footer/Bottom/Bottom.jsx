@@ -2,6 +2,9 @@ import classNames from 'classnames/bind';
 import styles from './Bottom.module.scss';
 
 import Button from '~/components/Button';
+import Logo from '~/components/Logo';
+import Paragraph from '~/components/Paragraph';
+
 import {
   TwitterIcon,
   FacebookIcon,
@@ -9,8 +12,6 @@ import {
   LinkedInIcon,
   YoutubeIcon,
 } from '~/components/Icons';
-import Logo from '~/components/Logo';
-import Paragraph from '~/components/Paragraph';
 
 const SOCIALS = [
   {
@@ -132,7 +133,7 @@ const Left = () => (
 const Right = () => (
   <div className={cx('right')}>
     <div className={cx('link-group')}>
-      <div className="title">Pages</div>
+      <div className="footer-title">Pages</div>
       <div className={cx('link-wrap')}>
         {PAGES.map(({ to, title }) => (
           <Button key={to} to={to} className={cx('link-item')}>
@@ -142,7 +143,7 @@ const Right = () => (
       </div>
     </div>
     <div className={cx('link-group')}>
-      <div className="title">Utility</div>
+      <div className="footer-title">Utility</div>
       <div className={cx('link-column')}>
         {UTILITIES.map(({ to, title }) => (
           <Button key={to} to={to} className={cx('link-item')}>
