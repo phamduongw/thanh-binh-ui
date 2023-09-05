@@ -4,6 +4,17 @@
   @extend %text-blue-43;
 }
 
+.section-heading {
+  @extend %flex-col;
+  @extend %gap-8;
+
+  max-width: 648px;
+
+  &.text-center {
+    @extend %text-center;
+  }
+}
+
 .section-title {
   @extend %text-blue-2e;
   @extend %text-700;
@@ -13,4 +24,23 @@
   @extend %text-blue-2e;
   @extend %text-large;
   @extend %text-500;
+}
+
+.card {
+  @extend %flex-col;
+  @extend %justify-between;
+  @extend %bg-white-fc;
+  @extend %border;
+  @extend %bc-white-e6;
+  @extend %br-32;
+  @extend %card-box-shadow;
+  @extend %cursor-pointer;
+
+  transition: border-color 0.3s, transform 0.3s;
+  will-change: border-color, transform;
+}
+
+.rotate-animated {
+  transition: rotate 0.3s;
+  will-change: rotate;
 }

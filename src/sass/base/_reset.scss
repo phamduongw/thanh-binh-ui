@@ -37,9 +37,10 @@ hr {
 }
 
 button {
+  @extend %cursor-pointer;
+
   background: none;
   font: inherit;
-  cursor: pointer;
 }
 
 img,

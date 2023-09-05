@@ -25,11 +25,6 @@
   rotate: -180deg;
 }
 
-.rotate-animated {
-  transition: rotate 0.3s;
-  will-change: rotate;
-}
-
 .drop-down {
   @extend %flex-col;
   @extend %bg-white-fc;

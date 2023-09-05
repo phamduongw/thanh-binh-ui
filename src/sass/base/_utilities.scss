@@ -127,6 +127,32 @@
   @extend %row-gap-24;
 }
 
+%column-gap-40 {
+  grid-column-gap: 40px;
+}
+
+%row-gap-40 {
+  grid-row-gap: 40px;
+}
+
+%gap-40 {
+  @extend %column-gap-40;
+  @extend %row-gap-40;
+}
+
+%column-gap-48 {
+  grid-column-gap: 48px;
+}
+
+%row-gap-48 {
+  grid-row-gap: 48px;
+}
+
+%gap-48 {
+  @extend %column-gap-48;
+  @extend %row-gap-48;
+}
+
 // Padding
 
 %container-padding {
@@ -301,6 +327,12 @@
 
 %text-left {
   text-align: left;
+}
+
+// Cursor
+
+%cursor-pointer {
+  cursor: pointer;
 }
 
 // Z-index

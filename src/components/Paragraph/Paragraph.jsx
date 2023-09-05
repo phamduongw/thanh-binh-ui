@@ -9,6 +9,7 @@ const Paragraph = ({
   gray71 = false,
   gray9c = false,
   children,
+  className,
 }) => (
   <p
     className={cx({
@@ -16,6 +17,7 @@ const Paragraph = ({
       small,
       gray71,
       gray9c,
+      [className]: className,
     })}
   >
     {children}

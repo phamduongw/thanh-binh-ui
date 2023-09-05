@@ -7,17 +7,8 @@
 .content {
   @extend %flex-col;
   @extend %align-center;
+  @extend %gap-48;
   @extend %container;
-
-  gap: 48px;
-}
-
-.heading {
-  @extend %flex-col;
-  @extend %gap-8;
-  @extend %text-center;
-
-  max-width: 648px;
 }
 
 .service-list {
@@ -34,15 +25,8 @@
 }
 
 .service-card {
-  @extend %flex-col;
-  @extend %justify-between;
   @extend %gap-16;
   @extend %h-full;
-  @extend %bg-white-fc;
-  @extend %border;
-  @extend %bc-white-e6;
-  @extend %br-32;
-  @extend %card-box-shadow;
   @extend %text-left;
 
   @include media($sm) {
@@ -54,8 +38,6 @@
   }
 
   padding: 40px 32px;
-  transition: border-color 0.2s, transform 0.2s;
-  will-change: border-color, transform;
 
   &:hover {
     @extend %bc-blue-2e;

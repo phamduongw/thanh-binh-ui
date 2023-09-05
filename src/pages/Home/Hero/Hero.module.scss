@@ -2,6 +2,7 @@
 
 .wrapper {
   @extend %grid;
+  @extend %gap-40;
   @extend %container;
 
   @include media($sm) {
@@ -19,7 +20,6 @@
     padding-top: 60px;
   }
 
-  gap: 40px;
   padding-top: 28px;
 
   img {

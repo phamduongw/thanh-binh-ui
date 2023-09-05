@@ -97,8 +97,8 @@ const NavDropDown = memo(({ isAnimated, pathname, handleCloseMenu }) => {
         <span>{config.routes.services.title}</span>
         <DropDownIcon
           className={cx({
-            rotate: isServicesOpen,
             'rotate-animated': isAnimated,
+            rotate: isServicesOpen,
           })}
         />
       </Button>
