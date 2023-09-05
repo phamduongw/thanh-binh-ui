@@ -59,9 +59,10 @@
 
 .right {
   @extend %flex;
+  @extend %column-gap-48;
 
   flex-wrap: wrap;
-  gap: 48px 56px;
+  row-gap: 56px;
 }
 
 .link-group {
@@ -71,9 +72,9 @@
 
 %link-grid {
   @extend %grid;
+  @extend %column-gap-40;
   @extend %row-gap-16;
 
-  grid-column-gap: 40px;
   justify-items: start;
 }
 

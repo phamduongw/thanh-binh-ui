@@ -1,0 +1,77 @@
+@import '~/sass/main';
+
+.wrapper {
+  @extend %grid;
+  @extend %gap-40;
+  @extend %container;
+
+  @include media($lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  img {
+    @extend %algin-self-center;
+    @extend %br-32;
+
+    width: 100%;
+    max-width: 520px;
+  }
+}
+
+.guarantee-detail {
+  @extend %flex-col;
+  @extend %gap-48;
+}
+
+.guarantee-list {
+  @extend %flex-col;
+  @extend %gap-24;
+}
+
+.guarantee-card {
+  @include media($sm) {
+    padding: 40px 44px;
+  }
+
+  @include media($md) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  padding: 32px 20px;
+
+  &:hover {
+    @extend %bc-blue-2e;
+    transform: scale(0.98);
+  }
+}
+
+.card-header {
+  @extend %flex;
+  @extend %justify-between;
+}
+
+.card-heading {
+  @extend %flex;
+  @extend %gap-12;
+
+  span {
+    @extend %text-large;
+    @extend %text-700;
+  }
+}
+
+.rotate {
+  rotate: 45deg;
+}
+
+.card-detail {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s;
+  will-change: height;
+}
+
+.content {
+  margin-top: 12px;
+}

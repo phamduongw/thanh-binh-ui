@@ -11,30 +11,36 @@ import SERVICES from '~/data/SERVICES';
 
 const cx = classNames.bind(styles);
 
+const ServiceCard = ({ icon: Icon, title, subtitle, handleClick }) => (
+  <article onClick={handleClick} className={cx('card', 'service-card')}>
+    <div className={cx('card-detail')}>
+      <div className={cx('card-heading')}>
+        <Icon width={56} />
+        <h3>{title}</h3>
+      </div>
+      <Paragraph gray71>{subtitle}</Paragraph>
+    </div>
+    <div className={cx('learn-more-wrap')}>
+      <div>Learn More</div>
+      <ChevronRightIcon />
+    </div>
+  </article>
+);
+
 const ServiceList = () => {
   const navigate = useNavigate();
   return (
     <div className={cx('service-list')}>
-      {SERVICES.map(({ to, icon: Icon, title, subtitle }) => (
-        <article
+      {SERVICES.map(({ to, icon, title, subtitle }) => (
+        <ServiceCard
           key={to}
-          onClick={() => {
+          icon={icon}
+          title={title}
+          subtitle={subtitle}
+          handleClick={() => {
             navigate(to);
           }}
-          className={cx('service-card')}
-        >
-          <div className={cx('card-detail')}>
-            <div className={cx('card-heading')}>
-              <Icon width={56} />
-              <h3>{title}</h3>
-            </div>
-            <Paragraph gray71>{subtitle}</Paragraph>
-          </div>
-          <div className={cx('learn-more-wrap')}>
-            <div>Learn More</div>
-            <ChevronRightIcon />
-          </div>
-        </article>
+        />
       ))}
     </div>
   );
@@ -43,8 +49,8 @@ const ServiceList = () => {
 const OurServices = () => (
   <section className={cx('wrapper')}>
     <div className={cx('content')}>
-      <div className={cx('heading')}>
-        <div className={cx('section-title')}>Our Services</div>
+      <div className="section-heading text-center">
+        <div className="section-title">Our Services</div>
         <h2>
           Flexible Solutions for Your Business - Choose What Works Best for You
         </h2>
