@@ -14,9 +14,17 @@ const routes = {
       'meeting-room',
     ],
   },
+  location: {
+    path: '/location',
+    title: 'Location',
+  },
+  about: {
+    path: '/about',
+    title: 'About',
+  },
   blog: {
     path: '/blog',
-    title: 'Locations',
+    title: 'Blog',
     slugs: [
       'how-coworking-spaces-promote-creativity',
       'what-is-a-virtual-office',
@@ -25,13 +33,9 @@ const routes = {
       '5-steps-to-achieving-business-goals',
     ],
   },
-  about: {
-    path: '/about',
-    title: 'About',
-  },
   contact: {
     path: '/contact',
-    title: 'Blog',
+    title: 'Contact',
   },
 };
 

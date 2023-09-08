@@ -375,3 +375,74 @@ export const PlusIcon = ({ className }) => (
     />
   </svg>
 );
+
+export const CheckIcon = () => (
+  <svg
+    width="32"
+    viewBox="0 0 32 32"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M16 2.66669C22.6275 2.66669 28 8.03927 28 14.6667C28 18.7651 25.7655 22.119 23.4112 24.526C22.1196 25.8465 20.7462 26.9298 19.5756 27.7484L19.0085 28.1356C18.9173 28.1964 18.8277 28.2553 18.7401 28.3124L18.2385 28.632L17.7905 28.9055L17.2361 29.228C16.4639 29.6642 15.5361 29.6642 14.7639 29.228L14.2095 28.9055L13.5169 28.4779C13.4332 28.4246 13.3475 28.3694 13.2599 28.3124L12.7127 27.9476C11.4833 27.1087 9.98808 25.9566 8.58883 24.526C6.23453 22.119 4 18.7651 4 14.6667C4 8.03927 9.37259 2.66669 16 2.66669ZM16 10.6667C13.7908 10.6667 12 12.4576 12 14.6667C12 16.8759 13.7908 18.6667 16 18.6667C18.2092 18.6667 20 16.8759 20 14.6667C20 12.4576 18.2092 10.6667 16 10.6667Z"
+      fill="#2E51E8"
+    />
+  </svg>
+);
+
+export const PlayIcon = () => (
+  <svg
+    width="90"
+    viewBox="0 0 150 149"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 74.093C0 33.1726 33.1726 0 74.093 0H75.907C116.827 0 150 33.1726 150 74.093V74.093C150 115.013 116.827 148.186 75.907 148.186H74.093C33.1726 148.186 0 115.013 0 74.093V74.093Z"
+      fill="#FCFCFF"
+    />
+    <g filter="url(#filter0_d_2973_37671)">
+      <path
+        d="M67.5263 52.1555C64.193 50.204 60 52.6079 60 56.4704V91.7169C60 95.5792 64.1927 97.9832 67.5259 96.032L97.6292 78.4105C100.928 76.4796 100.928 71.7117 97.6296 69.7805L67.5263 52.1555Z"
+        fill="#2E51E8"
+      />
+    </g>
+    <defs>
+      <filter
+        id="filter0_d_2973_37671"
+        x="52"
+        y="45.4629"
+        width="56.1033"
+        height="61.2617"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dy="2" />
+        <feGaussianBlur stdDeviation="4" />
+        <feComposite in2="hardAlpha" operator="out" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0.129412 0 0 0 0 0.121569 0 0 0 0 0.329412 0 0 0 0.06 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="BackgroundImageFix"
+          result="effect1_dropShadow_2973_37671"
+        />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="effect1_dropShadow_2973_37671"
+          result="shape"
+        />
+      </filter>
+    </defs>
+  </svg>
+);

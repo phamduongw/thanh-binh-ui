@@ -16,13 +16,13 @@ const Overlay = () => {
     disable: !isMenuOpen,
   };
 
-  const handleClick = useCallback(() => {
+  const handleCloseMenu = useCallback(() => {
     dispatch(closeMenu());
   }, []);
 
   return (
-    <div onClick={handleClick} className={cx('header', disable)}>
-      <div onClick={handleClick} className={cx('inset', disable)} />
+    <div onClick={handleCloseMenu} className={cx('header', disable)}>
+      <div onClick={handleCloseMenu} className={cx('inset', disable)} />
     </div>
   );
 };

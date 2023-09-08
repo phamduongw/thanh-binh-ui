@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import Hero from './Hero';
 import OurGuarantee from './OurGuarantee';
 import OurServices from './OurServices';
+import OurWork from './OurWork';
 
 const Home = ({ title }) => (
   <main>
@@ -12,6 +13,7 @@ const Home = ({ title }) => (
     <Hero />
     <OurServices />
     <OurGuarantee />
+    <OurWork />
   </main>
 );
 

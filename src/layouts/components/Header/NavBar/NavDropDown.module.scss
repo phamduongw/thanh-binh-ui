@@ -7,8 +7,8 @@
 .toggle {
   @extend %flex;
   @extend %align-center;
-  @extend %gap-8;
-  @extend %w-full;
+  @extend %column-gap-8;
+  @extend %width-full;
   @extend %nav-item;
   @extend %transition-color;
 
@@ -28,6 +28,7 @@
 .drop-down {
   @extend %flex-col;
   @extend %bg-white-fc;
+  @extend %overflow-hidden;
 
   @include media($lg) {
     position: absolute;
@@ -49,7 +50,6 @@
   }
 
   max-height: 0;
-  overflow: hidden;
 
   &:hover {
     @extend %bc-blue-2e;
@@ -96,7 +96,7 @@
 .service-item {
   @extend %flex;
   @extend %align-center;
-  @extend %gap-12;
+  @extend %column-gap-12;
 
   padding: 16px 24px;
   border-radius: 18px;

@@ -2,11 +2,11 @@
 
 .wrapper {
   @extend %grid;
-  @extend %gap-40;
+  @extend %row-gap-40;
   @extend %container;
 
   @include media($sm) {
-    gap: 22px;
+    row-gap: 22px;
     padding-top: 32px;
   }
 
@@ -16,7 +16,7 @@
 
   @include media($lg) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    column-gap: 24px;
     padding-top: 60px;
   }
 
@@ -42,18 +42,17 @@
 .heading {
   @extend %flex-col;
   @extend %algin-self-center;
+  @extend %row-gap-32;
 
   @include media(0, $lg) {
     align-items: center;
     text-align: center;
   }
-
-  gap: 32px;
 }
 
 .text-wrap {
   @extend %flex-col;
-  @extend %gap-16;
+  @extend %row-gap-16;
 
   h1 {
     @include media($lg) {

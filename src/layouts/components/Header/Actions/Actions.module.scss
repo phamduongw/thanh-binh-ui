@@ -4,7 +4,7 @@
   @extend %flex;
   @extend %justify-self-end;
   @extend %align-center;
-  @extend %gap-16;
+  @extend %column-gap-16;
 
   @include media(0, $lg) {
     display: none;
@@ -30,6 +30,6 @@
     margin-bottom: 0;
   }
 
-  gap: 6px;
+  column-gap: 6px;
   margin-bottom: 6px;
 }

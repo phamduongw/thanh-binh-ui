@@ -4,9 +4,19 @@
   @extend %text-blue-43;
 }
 
+.section-wrapper {
+  @extend %bg-white-f4;
+}
+
+.section-container {
+  @extend %grid;
+  @extend %gap-40;
+  @extend %container;
+}
+
 .section-heading {
   @extend %flex-col;
-  @extend %gap-8;
+  @extend %row-gap-8;
 
   max-width: 648px;
 
@@ -43,4 +53,14 @@
 .rotate-animated {
   transition: rotate 0.3s;
   will-change: rotate;
+}
+
+.svg-animated {
+  transition: filter 0.2s, scale 0.2s;
+  will-change: filter, scale;
+
+  &:hover {
+    filter: brightness(1.15);
+    scale: 0.98;
+  }
 }

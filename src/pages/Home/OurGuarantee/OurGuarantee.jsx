@@ -37,12 +37,15 @@ const GuaranteeCard = ({ icon: Icon, title, content }) => {
     detailRef.current.style = '';
   }, []);
 
-  const handleClick = () => {
+  const handleOpenDetail = () => {
     setIsDetailOpen(!isDetailOpen);
   };
 
   return (
-    <article onClick={handleClick} className={cx('card', 'guarantee-card')}>
+    <article
+      onClick={handleOpenDetail}
+      className={cx('card', 'guarantee-card')}
+    >
       <div className={cx('card-header')}>
         <div className={cx('card-heading')}>
           <Icon />
@@ -70,12 +73,13 @@ const GuaranteeList = () => (
 );
 
 const OurGuarantee = () => (
-  <section className={cx('wrapper')}>
+  <section className={cx('section-container', 'grid-layout')}>
     <img
       srcSet={`${guarantee500} 500w, ${guarantee800} 800w, ${guarantee1044} 1044w`}
       sizes="(max-width: 479px) 100vw, (max-width: 767px) 93vw, (max-width: 991px) 520px, 46vw"
       src={guarantee1044}
       alt="guarantee"
+      className={cx('guarantee-image')}
     />
     <div className={cx('guarantee-detail')}>
       <div className="section-heading">

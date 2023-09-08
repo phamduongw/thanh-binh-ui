@@ -12,12 +12,12 @@ const cx = classNames.bind(styles);
 
 const Form = () => {
   const formRef = useRef();
-  const [isMessageOpen, setIsMessageOpen] = useState(false);
+  const [isMessageVisible, setIsMessageVisible] = useState(false);
 
   const handleSubmit = useCallback((event) => {
     event.preventDefault();
     setTimeout(() => {
-      setIsMessageOpen(true);
+      setIsMessageVisible(true);
     }, 500);
   }, []);
 
@@ -27,7 +27,7 @@ const Form = () => {
         type="email"
         placeholder="Your Email"
         style={{
-          borderColor: isMessageOpen && 'transparent',
+          borderColor: isMessageVisible && 'transparent',
         }}
       />
       <Button className={cx('send-btn')}>
@@ -35,7 +35,7 @@ const Form = () => {
       </Button>
       <div
         className={cx('message', {
-          open: isMessageOpen,
+          hidden: !isMessageVisible,
         })}
       >
         Thank you! Your submission has been received!
