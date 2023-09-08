@@ -20,8 +20,8 @@ const Actions = memo(({ desktop, responsive, handleCloseMenu }) => (
   >
     <Button
       to={config.routes.contact.path}
-      className={cx('contact')}
       onClick={handleCloseMenu}
+      className={cx('contact')}
     >
       <PhoneIcon />
       <span>+1 234-567-8910</span>

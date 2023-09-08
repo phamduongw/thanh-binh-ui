@@ -18,7 +18,7 @@
 
   @include media($lg) {
     display: flex;
-    gap: 40px;
+    column-gap: 40px;
     padding: 0;
   }
 }

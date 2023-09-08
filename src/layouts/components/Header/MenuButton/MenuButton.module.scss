@@ -4,13 +4,13 @@
   @extend %relative;
   @extend %flex-col;
   @extend %justify-center;
-  @extend %h-full;
+  @extend %height-full;
 
   @include media($lg) {
     display: none;
   }
 
-  gap: 5px;
+  row-gap: 5px;
 }
 
 .bar {

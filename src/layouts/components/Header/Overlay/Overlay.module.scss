@@ -2,17 +2,16 @@
 
 .header {
   @extend %absolute;
-  @extend %h-full;
+  @extend %height-full;
 
   left: 0;
   right: 0;
 }
 
 .inset {
+  @extend %fixed;
   @extend %z-index--1;
-
-  position: fixed;
-  inset: 0;
+  @extend %inset-0;
 }
 
 .disable {

@@ -32,8 +32,8 @@ const DropDownServices = memo(
         {SERVICES.map(({ to, title, icon: Icon }) => (
           <li key={to}>
             <Button
-              onClick={handleCloseMenu}
               to={to}
+              onClick={handleCloseMenu}
               className={cx('service-item', {
                 'highlight-blue-43': to == window.location.pathname,
               })}
@@ -45,11 +45,11 @@ const DropDownServices = memo(
         ))}
       </ul>
       <Button
-        onClick={handleCloseMenu}
         to={config.routes.services.path}
         button
         secondary
         small
+        onClick={handleCloseMenu}
         className={cx('view-all-btn')}
       >
         View All Services

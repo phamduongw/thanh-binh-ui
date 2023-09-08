@@ -34,7 +34,7 @@ const MenuButton = () => {
   };
 
   return (
-    <Button className={cx('wrapper')} onClick={handleToggleMenu}>
+    <Button onClick={handleToggleMenu} className={cx('wrapper')}>
       {ANIMATIONS.map(([enable, disable]) => (
         <span
           key={enable}

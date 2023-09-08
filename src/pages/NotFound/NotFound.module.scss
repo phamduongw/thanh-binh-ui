@@ -7,20 +7,20 @@
 .container {
   @extend %flex-col;
   @extend %justify-center;
-  @extend %gap-24;
-  @extend %text-center;
+  @extend %row-gap-24;
+  @extend %width-fit-content;
   @extend %margin-0-auto;
+  @extend %text-center;
 
   @include media($md) {
     max-width: 464px;
   }
 
-  max-width: fit-content;
   height: 100vh;
 }
 
 .title {
   @extend %flex-col;
   @extend %align-center;
-  @extend %gap-16;
+  @extend %row-gap-16;
 }

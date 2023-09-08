@@ -8,6 +8,10 @@
   position: absolute;
 }
 
+%fixed {
+  position: fixed;
+}
+
 // Position properties
 
 %top-0 {
@@ -16,11 +20,15 @@
 
 // Box model properties
 
-%w-full {
+%width-full {
   width: 100%;
 }
 
-%h-full {
+%width-fit-content {
+  width: fit-content;
+}
+
+%height-full {
   height: 100%;
 }
 
@@ -76,11 +84,11 @@
 // Gap
 
 %column-gap-8 {
-  grid-column-gap: 8px;
+  column-gap: 8px;
 }
 
 %row-gap-8 {
-  grid-row-gap: 8px;
+  row-gap: 8px;
 }
 
 %gap-8 {
@@ -89,11 +97,11 @@
 }
 
 %column-gap-12 {
-  grid-column-gap: 12px;
+  column-gap: 12px;
 }
 
 %row-gap-12 {
-  grid-row-gap: 12px;
+  row-gap: 12px;
 }
 
 %gap-12 {
@@ -102,11 +110,11 @@
 }
 
 %column-gap-16 {
-  grid-column-gap: 16px;
+  column-gap: 16px;
 }
 
 %row-gap-16 {
-  grid-row-gap: 16px;
+  row-gap: 16px;
 }
 
 %gap-16 {
@@ -115,11 +123,11 @@
 }
 
 %column-gap-24 {
-  grid-column-gap: 24px;
+  column-gap: 24px;
 }
 
 %row-gap-24 {
-  grid-row-gap: 24px;
+  row-gap: 24px;
 }
 
 %gap-24 {
@@ -127,12 +135,25 @@
   @extend %row-gap-24;
 }
 
+%column-gap-32 {
+  column-gap: 32px;
+}
+
+%row-gap-32 {
+  row-gap: 32px;
+}
+
+%gap-32 {
+  @extend %column-gap-32;
+  @extend %row-gap-32;
+}
+
 %column-gap-40 {
-  grid-column-gap: 40px;
+  column-gap: 40px;
 }
 
 %row-gap-40 {
-  grid-row-gap: 40px;
+  row-gap: 40px;
 }
 
 %gap-40 {
@@ -141,11 +162,11 @@
 }
 
 %column-gap-48 {
-  grid-column-gap: 48px;
+  column-gap: 48px;
 }
 
 %row-gap-48 {
-  grid-row-gap: 48px;
+  row-gap: 48px;
 }
 
 %gap-48 {
@@ -230,9 +251,17 @@
 
 // Border
 
-%border {
+%border-width-1 {
   border-width: 1px;
+}
+
+%border-style-solid {
   border-style: solid;
+}
+
+%border {
+  @extend %border-width-1;
+  @extend %border-style-solid;
 }
 
 // Border Color
@@ -325,10 +354,6 @@
   text-align: center;
 }
 
-%text-left {
-  text-align: left;
-}
-
 // Cursor
 
 %cursor-pointer {
@@ -343,6 +368,22 @@
 
 %z-index--1 {
   z-index: -1;
+}
+
+// Overflow
+
+%overflow-hidden {
+  overflow: hidden;
+}
+
+// Inset
+%inset-0 {
+  inset: 0;
+}
+
+// Object Fit
+%object-fit-cover {
+  object-fit: cover;
 }
 
 // Customize

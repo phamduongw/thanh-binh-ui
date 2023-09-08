@@ -28,8 +28,8 @@ const Hero = () => (
         <Button to={config.routes.contact.path} button primary>
           Get a Quote
         </Button>
-        <Button to={config.routes.blog.path} button secondary>
-          View Locations
+        <Button to={config.routes.location.path} button secondary>
+          View Location
         </Button>
       </div>
     </div>

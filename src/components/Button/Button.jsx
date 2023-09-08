@@ -15,16 +15,16 @@ const Button = forwardRef(
       secondary = false,
       small = false,
       children,
-      className,
       onClick,
+      className,
     },
     ref,
   ) => {
     let Comp = 'button';
 
     const props = {
-      onClick,
       ref,
+      onClick,
     };
 
     if (to) {

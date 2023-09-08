@@ -1,31 +1,27 @@
 @import '~/sass/main';
 
-.wrapper {
-  @extend %grid;
-  @extend %gap-40;
-  @extend %container;
-
+.grid-layout {
   @include media($lg) {
     grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  img {
-    @extend %algin-self-center;
-    @extend %br-32;
+.guarantee-image {
+  @extend %algin-self-center;
+  @extend %br-32;
 
-    width: 100%;
-    max-width: 520px;
-  }
+  width: 100%;
+  max-width: 520px;
 }
 
 .guarantee-detail {
   @extend %flex-col;
-  @extend %gap-48;
+  @extend %row-gap-48;
 }
 
 .guarantee-list {
   @extend %flex-col;
-  @extend %gap-24;
+  @extend %row-gap-24;
 }
 
 .guarantee-card {
@@ -53,7 +49,8 @@
 
 .card-heading {
   @extend %flex;
-  @extend %gap-12;
+  @extend %align-center;
+  @extend %column-gap-12;
 
   span {
     @extend %text-large;
@@ -66,8 +63,9 @@
 }
 
 .card-detail {
+  @extend %overflow-hidden;
+
   height: 0;
-  overflow: hidden;
   transition: height 0.3s;
   will-change: height;
 }

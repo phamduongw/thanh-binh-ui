@@ -2,7 +2,7 @@
 
 .wrapper {
   @extend %flex-col;
-  @extend %gap-16;
+  @extend %row-gap-16;
 
   max-width: 448px;
 }
@@ -27,19 +27,17 @@
 .message {
   @extend %absolute;
   @extend %top-0;
-  @extend %w-full;
+  @extend %width-full;
   @extend %bg-white-f4;
   @extend %text-blue-2e;
   @extend %br-14;
   @extend %text-center;
 
   padding: 15px;
-  opacity: 0;
-  visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
 }
 
-.open {
-  opacity: 1;
-  visibility: visible;
+.hidden {
+  opacity: 0;
+  visibility: hidden;
 }
