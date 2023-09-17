@@ -4,6 +4,7 @@ import Hero from './Hero';
 import OurGuarantee from './OurGuarantee';
 import OurServices from './OurServices';
 import OurWork from './OurWork';
+import Reviews from './Reviews';
 
 const Home = ({ title }) => (
   <main>
@@ -14,6 +15,7 @@ const Home = ({ title }) => (
     <OurServices />
     <OurGuarantee />
     <OurWork />
+    <Reviews />
   </main>
 );
 

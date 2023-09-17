@@ -13,6 +13,8 @@ import {
   YoutubeIcon,
 } from '~/components/Icons';
 
+import config from '~/config';
+
 const SOCIALS = [
   {
     to: '/1',
@@ -38,67 +40,36 @@ const SOCIALS = [
 
 const PAGES = [
   {
+    to: config.routes.home.path,
+    title: config.routes.home.title,
+  },
+  {
+    to: config.routes.about.path,
+    title: config.routes.about.title,
+  },
+  {
+    to: config.routes.services.path,
+    title: config.routes.services.title,
+  },
+  {
+    to: config.routes.contact.path,
+    title: config.routes.contact.title,
+  },
+  {
+    to: config.routes.blog.path,
+    title: config.routes.blog.title,
+  },
+  {
     to: '/1',
-    title: 'Home',
+    title: 'Giấy phép',
   },
   {
     to: '/2',
-    title: 'About',
+    title: 'Chính sách',
   },
   {
     to: '/3',
-    title: 'Services',
-  },
-  {
-    to: '/4',
-    title: 'Contact',
-  },
-  {
-    to: '/5',
-    title: 'Services Single',
-  },
-  {
-    to: '/6',
-    title: 'Blog',
-  },
-  {
-    to: '/7',
-    title: 'Location',
-  },
-  {
-    to: '/8',
-    title: 'Blog Post',
-  },
-  {
-    to: '/9',
-    title: 'Location Single',
-  },
-  {
-    to: '/10',
-    title: 'More Templates',
-  },
-];
-
-const UTILITIES = [
-  {
-    to: '/1',
-    title: 'Style Guide',
-  },
-  {
-    to: '/2',
-    title: 'Licenses',
-  },
-  {
-    to: '/3',
-    title: 'Changelog',
-  },
-  {
-    to: '/4',
-    title: '404',
-  },
-  {
-    to: '/5',
-    title: 'Password',
+    title: 'Bảo mật',
   },
 ];
 
@@ -108,15 +79,15 @@ const Left = () => (
   <div className={cx('left')}>
     <Logo />
     <Paragraph>
-      ⓒ Serviced Office.
+      ⓒ Thanh Binh Printing.
       <br />
       Built by{' '}
       <Button to={'/'} className={cx('link-item')}>
-        Salmon Pixel
+        Pham Duong
       </Button>
       . Powered by{' '}
       <Button to={'/'} className={cx('link-item')}>
-        Webflow
+        JMaster
       </Button>
       .
     </Paragraph>
@@ -131,26 +102,14 @@ const Left = () => (
 );
 
 const Right = () => (
-  <div className={cx('right')}>
-    <div className={cx('link-group')}>
-      <div className="footer-title">Pages</div>
-      <div className={cx('link-wrap')}>
-        {PAGES.map(({ to, title }) => (
-          <Button key={to} to={to} className={cx('link-item')}>
-            {title}
-          </Button>
-        ))}
-      </div>
-    </div>
-    <div className={cx('link-group')}>
-      <div className="footer-title">Utility</div>
-      <div className={cx('link-column')}>
-        {UTILITIES.map(({ to, title }) => (
-          <Button key={to} to={to} className={cx('link-item')}>
-            {title}
-          </Button>
-        ))}
-      </div>
+  <div className={cx('link-group')}>
+    <div className="footer-title">Thanh Bình</div>
+    <div className={cx('link-wrap')}>
+      {PAGES.map(({ to, title }) => (
+        <Button key={to} to={to} className={cx('link-item')}>
+          {title}
+        </Button>
+      ))}
     </div>
   </div>
 );

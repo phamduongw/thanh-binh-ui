@@ -38,6 +38,10 @@
   display: none;
 }
 
+%display-inline-block {
+  display: inline-block;
+}
+
 %flex {
   display: flex;
 }
@@ -172,6 +176,19 @@
 %gap-48 {
   @extend %column-gap-48;
   @extend %row-gap-48;
+}
+
+%column-gap-64 {
+  column-gap: 64px;
+}
+
+%row-gap-64 {
+  row-gap: 64px;
+}
+
+%gap-64 {
+  @extend %column-gap-64;
+  @extend %row-gap-64;
 }
 
 // Padding
@@ -376,14 +393,40 @@
   overflow: hidden;
 }
 
+%overflow-visible {
+  overflow: visible;
+}
+
 // Inset
+
 %inset-0 {
   inset: 0;
 }
 
 // Object Fit
+
 %object-fit-cover {
   object-fit: cover;
+}
+
+// White Space
+
+%white-space-initial {
+  white-space: initial;
+}
+
+%white-space-nowrap {
+  white-space: nowrap;
+}
+
+// Aspect Ratio
+
+%aspect-ratio-square {
+  aspect-ratio: 1 / 1;
+}
+
+%aspect-ratio-16-9 {
+  aspect-ratio: 16 / 9;
 }
 
 // Customize

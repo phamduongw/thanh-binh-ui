@@ -6,7 +6,7 @@ import styles from './OurServices.module.scss';
 import Button from '~/components/Button';
 import Paragraph from '~/components/Paragraph';
 
-import { ChevronRightIcon } from '~/components/Icons';
+import { RightChevronIcon } from '~/components/Icons';
 
 import SERVICES from '~/data/SERVICES';
 
@@ -24,8 +24,8 @@ const ServiceCard = ({ icon: Icon, title, subtitle, handleViewDetail }) => (
       <Paragraph gray71>{subtitle}</Paragraph>
     </div>
     <div className={cx('learn-more-wrap')}>
-      <div>Learn More</div>
-      <ChevronRightIcon />
+      <div>Tìm hiểu thêm</div>
+      <RightChevronIcon width={20} />
     </div>
   </article>
 );
@@ -51,16 +51,16 @@ const ServiceList = () => {
 
 const OurServices = () => (
   <section className="section-wrapper">
-    <div className={cx('content')}>
+    <div className={cx('section-container-flex', 'content')}>
       <div className="section-heading text-center">
-        <div className="section-title">Our Services</div>
+        <div className="section-title">Dịch vụ</div>
         <h2>
-          Flexible Solutions for Your Business - Choose What Works Best for You
+          Giải pháp in ấn linh hoạt - Hãy lựa chọn dich vụ phù hợp nhất với bạn
         </h2>
       </div>
       <ServiceList />
       <Button to={config.routes.services.path} button primary>
-        View All Services
+        Tất cả dịch vụ
       </Button>
     </div>
   </section>

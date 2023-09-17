@@ -1,16 +1,8 @@
 @import '~/sass/main';
 
 .content {
-  @extend %flex-col;
-  @extend %row-gap-40;
-  @extend %container;
-
   @include media($sm) {
     align-items: center;
-  }
-
-  @include media($md) {
-    row-gap: 48px;
   }
 }
 

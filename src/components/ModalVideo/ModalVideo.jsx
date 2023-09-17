@@ -17,7 +17,7 @@ const Poster = memo(({ srcSet, sizes, src, handleCloseModal, className }) => (
       sizes={sizes}
       src={src}
       alt="poster"
-      className={cx('poster', className)}
+      className={cx('rounded-image', className)}
     />
     <div className={cx('poster-overlay')}>
       <Button

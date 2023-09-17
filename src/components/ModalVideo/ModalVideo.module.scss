@@ -18,12 +18,6 @@
   @extend %overflow-hidden;
 }
 
-.poster {
-  @extend %width-full;
-  @extend %br-32;
-  @extend %object-fit-cover;
-}
-
 .container {
   @extend %fixed;
   @extend %flex-center;

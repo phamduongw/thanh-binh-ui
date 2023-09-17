@@ -17,19 +17,19 @@ const Hero = () => (
     <div className={cx('heading')}>
       <div className={cx('text-wrap')}>
         <h1>
-          The <span>perfect workspace</span> crafted for your business
+          <span>Nghệ thuật in ấn</span> hoàn hảo cho doanh nghiệp của bạn
         </h1>
         <Paragraph large gray71>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          dictum felis ut molestie dictum.
+          Hãy để chúng tôi giúp bạn đưa thông điệp của mình đến với đối tượng
+          mục tiêu một cách chính xác và hiệu quả.
         </Paragraph>
       </div>
       <div className={cx('btn-wrap')}>
         <Button to={config.routes.contact.path} button primary>
-          Get a Quote
+          Nhận báo giá
         </Button>
-        <Button to={config.routes.location.path} button secondary>
-          View Location
+        <Button to={config.routes.about.path} button secondary>
+          Thăm quan xưởng in
         </Button>
       </div>
     </div>

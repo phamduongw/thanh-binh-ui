@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { Helmet } from 'react-helmet-async';
 
 import classNames from 'classnames/bind';

@@ -15,16 +15,19 @@ import config from '~/config';
 
 const cx = classNames.bind(styles);
 
-const CHECKS = ['Midtown', 'City Center', 'The River Front'];
+const CHECKS = ['Chất lượng', 'Nhanh chóng', 'Trách nhiệm'];
 
 const Detail = () => (
   <div className={cx('work-detail')}>
     <div className="section-heading">
-      <div className="section-title">Our Work</div>
-      <h2>Discover the Location that Best Fits Your Business Needs</h2>
+      <div className="section-title">Về chúng tôi</div>
+      <h2>
+        Thanh Bình - 25 năm một chặng đường thay đổi để hòa nhập và phát triển
+      </h2>
       <Paragraph gray71>
-        Vestibulum ornare ipsum sapien, vitae mollis augue fringilla sit amet.
-        Donec et mauris et arcu venenatis aliquam non ut dui.
+        Nhờ những thay đổi này, Thanh Bình đã và đang tiếp tục phát triển để đưa
+        ra những sản phẩm in ấn chất lượng cao, đáp ứng mọi nhu cầu của khách
+        hàng.
       </Paragraph>
     </div>
     <div className={cx('check-wrap')}>
@@ -35,15 +38,15 @@ const Detail = () => (
         </div>
       ))}
     </div>
-    <Button to={config.routes.location.path} button primary>
-      View Location
+    <Button to={config.routes.about.path} button primary>
+      Tìm hiểu thêm
     </Button>
   </div>
 );
 
 const OurWork = () => (
   <section className="section-wrapper">
-    <div className={cx('section-container', 'grid-layout')}>
+    <div className={cx('section-container-grid', 'grid-layout')}>
       <Detail />
       <ModalVideo
         srcSet={`${poster500} 500w, ${poster800} 800w, ${poster1080} 1080w`}

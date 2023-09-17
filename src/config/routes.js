@@ -1,41 +1,25 @@
 const routes = {
   home: {
     path: '/',
-    title: 'Home',
+    title: 'Trang chủ',
   },
   services: {
-    path: '/services',
-    title: 'Services',
-    slugs: [
-      'office-space',
-      'dedicated-desk',
-      'coworking-space',
-      'virtual-office',
-      'meeting-room',
-    ],
-  },
-  location: {
-    path: '/location',
-    title: 'Location',
+    path: '/dich-vu',
+    title: 'Dịch vụ',
+    slugs: ['in-sach', 'in-catalogue', 'in-lich', 'in-tap-chi', 'in-hop-qua'],
   },
   about: {
-    path: '/about',
-    title: 'About',
+    path: '/gioi-thieu',
+    title: 'Giới thiệu',
   },
   blog: {
-    path: '/blog',
-    title: 'Blog',
-    slugs: [
-      'how-coworking-spaces-promote-creativity',
-      'what-is-a-virtual-office',
-      'managing-your-mail-box',
-      'how-much-office-space-do-you-need-per-person',
-      '5-steps-to-achieving-business-goals',
-    ],
+    path: '/tin-tuc',
+    title: 'Tin tức',
+    slugs: [],
   },
   contact: {
-    path: '/contact',
-    title: 'Contact',
+    path: '/lien-he',
+    title: 'Liên hệ',
   },
 };
 
