@@ -25,7 +25,7 @@ const Form = () => {
     <form ref={formRef} onSubmit={handleSubmit} className={cx('form')}>
       <input
         type="email"
-        placeholder="Your Email"
+        placeholder="Email của bạn"
         style={{
           borderColor: isMessageVisible && 'transparent',
         }}
@@ -38,7 +38,7 @@ const Form = () => {
           hidden: !isMessageVisible,
         })}
       >
-        Thank you! Your submission has been received!
+        Chúng tôi đã nhận được yêu cầu. Cảm ơn bạn!
       </div>
     </form>
   );
@@ -46,9 +46,9 @@ const Form = () => {
 
 const Top = () => (
   <div className={cx('wrapper')}>
-    <div className="footer-title">Subscribe to Our Newsletter</div>
+    <div className="footer-title">Đăng ký theo dõi</div>
     <Paragraph gray9c>
-      Stay in the know! Subscribe for news and our latest promotions!
+      Đăng ký để nhận tin tức và chương trình khuyến mãi mới nhất của chúng tôi!
     </Paragraph>
     <Form />
   </div>

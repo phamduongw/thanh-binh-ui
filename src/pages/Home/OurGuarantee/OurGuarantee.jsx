@@ -73,18 +73,18 @@ const GuaranteeList = () => (
 );
 
 const OurGuarantee = () => (
-  <section className={cx('section-container', 'grid-layout')}>
+  <section className={cx('section-container-grid', 'grid-layout')}>
     <img
       srcSet={`${guarantee500} 500w, ${guarantee800} 800w, ${guarantee1044} 1044w`}
       sizes="(max-width: 479px) 100vw, (max-width: 767px) 93vw, (max-width: 991px) 520px, 46vw"
       src={guarantee1044}
       alt="guarantee"
-      className={cx('guarantee-image')}
+      className={cx('rounded-image', 'guarantee-image')}
     />
     <div className={cx('guarantee-detail')}>
       <div className="section-heading">
-        <div className="section-title">Our Guarantee</div>
-        <h2>Explore the Exclusive Benefits of Our Office Space</h2>
+        <div className="section-title">Cam kết</div>
+        <h2>Khám phá những lợi ích khi là đối tác của Thanh Bình</h2>
       </div>
       <GuaranteeList />
     </div>

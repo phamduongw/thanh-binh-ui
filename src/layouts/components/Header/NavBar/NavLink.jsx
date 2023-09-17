@@ -9,16 +9,16 @@ import config from '~/config';
 
 const NAV_LINK_ITEMS = [
   {
-    to: config.routes.location.path,
-    name: config.routes.location.title,
-  },
-  {
     to: config.routes.about.path,
     name: config.routes.about.title,
   },
   {
     to: config.routes.blog.path,
     name: config.routes.blog.title,
+  },
+  {
+    to: config.routes.contact.path,
+    name: config.routes.contact.title,
   },
 ];
 

@@ -5,7 +5,6 @@ import Blog from '~/pages/Blog';
 import BlogDetail from '~/pages/Blog/BlogDetail/';
 import Contact from '~/pages/Contact';
 import Home from '~/pages/Home';
-import Location from '~/pages/Location';
 import ServiceDetail from '~/pages/Services/ServiceDetail';
 import Services from '~/pages/Services';
 
@@ -33,11 +32,6 @@ const publicRoutes = [
     path: config.routes.home.path,
     title: config.routes.home.title,
     component: Home,
-  },
-  {
-    path: config.routes.location.path,
-    title: config.routes.location.title,
-    component: Location,
   },
   {
     path: config.routes.services.path,

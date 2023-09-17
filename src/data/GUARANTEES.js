@@ -7,21 +7,21 @@ import {
 const GUARANTEES = [
   {
     icon: GuaranteeIcon1,
-    title: '24 Hour Access',
+    title: 'Chất lượng sản phẩm',
     content:
-      'Etiam pretium nibh eros, sed faucibus erat condimentum gravida. Suspendisse potenti. Integer sed orci ac justo ultricies scelerisque quis sed dui.',
+      'Chúng tôi luôn đặt trọng tâm vào việc cung cấp dịch vụ tốt nhất. Vì chúng tôi hiểu rằng, chỉ có sự hài lòng của khách hàng mới chính là điều quan trọng nhất đối với một doanh nghiệp.',
   },
   {
     icon: GuaranteeIcon2,
-    title: 'Assistant',
+    title: 'Sự hài lòng của khách hàng',
     content:
-      'Phasellus ultrices augue lectus, non bibendum massa lacinia id. In blandit, urna id tincidunt pretium, justo justo placerat mauris, ut pharetra magna dolor eu urna.',
+      'Chúng tôi cam kết luôn lắng nghe những ý kiến từ phía khách hàng và nỗ lực để cải thiện mọi khía cạnh của chất lượng dịch vụ và sản phẩm.',
   },
   {
     icon: GuaranteeIcon3,
-    title: 'Amenities',
+    title: 'Phục vụ mọi lúc mọi nơi',
     content:
-      'Aenean elementum finibus purus eget condimentum. Ut ultricies velit magna, non elementum neque sagittis volutpat. Phasellus molestie augue ut pretium iaculis.',
+      'Nếu quý khách hàng có bất kỳ yêu cầu hay thắc mắc nào, hãy liên hệ với chúng tôi qua các kênh hỗ trợ khách hàng để được tư vấn và hỗ trợ mọi vấn đề liên quan đến sản phẩm và dịch vụ.',
   },
 ];
 

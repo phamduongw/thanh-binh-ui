@@ -14,37 +14,37 @@ const SERVICES = [
   {
     to: PATH + config.routes.services.slugs[0],
     icon: ServiceIcon1,
-    title: 'Office Space',
+    title: 'In Sách',
     subtitle:
-      'Curabitur turpis justo, gravida eget placerat at, volutpat ac est. Fusce luctus tempus est cursus suscipit.',
+      'In ấn các loại sách khác nhau bao gồm: sách giáo khoa, sách giới thiệu sản phẩm, truyện, tiểu thuyết.',
   },
   {
     to: PATH + config.routes.services.slugs[1],
     icon: ServiceIcon2,
-    title: 'Dedicated Desk',
+    title: 'In Catalogue',
     subtitle:
-      'Etiam malesuada, tellus sed bibendum maximus, sem odio mattis dui, quis mollis dui leo non nisi.',
+      'Catalogue là một mô hình giới thiệu dịch vụ không thể thiếu đối với mọi doanh nghiệp kinh doanh sản phẩm.',
   },
   {
     to: PATH + config.routes.services.slugs[2],
     icon: ServiceIcon3,
-    title: 'Coworking Space',
+    title: 'In Lịch',
     subtitle:
-      'Maecenas at ligula consequat eros commodo interdum. Quisque convallis eget arcu vitae egestas.',
+      'Lịch là một trong những món quà tinh thần tặng đối tác được các công ty sử dụng vào mỗi dịp cuối năm.',
   },
   {
     to: PATH + config.routes.services.slugs[3],
     icon: ServiceIcon4,
-    title: 'Virtual Office',
+    title: 'In Tạp Chí',
     subtitle:
-      'Donec mi augue, mollis eu pulvinar et, bibendum non lorem. Praesent aliquam malesuada velit id tincidunt.',
+      'Tạp chí được ứng dụng trong nhiều lĩnh vực thời trang, làm đẹp, sức khỏe, âm nhạc.',
   },
   {
     to: PATH + config.routes.services.slugs[4],
     icon: ServiceIcon5,
-    title: 'Meeting Room',
+    title: 'In Hộp Quà',
     subtitle:
-      'Etiam nunc odio, gravida vitae metus in, placerat varius leo. Nam convallis tellus sit amet lobortis imperdiet.',
+      'Hộp quà tặng với kiểu dáng sang trọng, thiết kế tinh tế giúp nâng cao giá trị của món quà.',
   },
 ];
 

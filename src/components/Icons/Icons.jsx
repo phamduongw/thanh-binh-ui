@@ -303,9 +303,9 @@ export const NotFoundIcon = () => (
   </svg>
 );
 
-export const ChevronRightIcon = () => (
+export const RightChevronIcon = ({ width }) => (
   <svg
-    width="20"
+    width={width}
     viewBox="0 0 32 32"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -444,5 +444,21 @@ export const PlayIcon = () => (
         />
       </filter>
     </defs>
+  </svg>
+);
+
+export const LeftChevronIcon = () => (
+  <svg
+    width="24"
+    viewBox="0 0 32 32"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M10.5858 17.4143C9.80474 16.6332 9.80474 15.3668 10.5858 14.5857L18.1283 7.04331C18.9094 6.26226 20.1756 6.26226 20.9567 7.04331C21.7378 7.82435 21.7378 9.09068 20.9567 9.87174L14.8284 16L20.9567 22.1283C21.7378 22.9093 21.7378 24.1756 20.9567 24.9567C20.1756 25.7377 18.9094 25.7377 18.1283 24.9567L10.5858 17.4143Z"
+      fill="#2E51E8"
+    />
   </svg>
 );
