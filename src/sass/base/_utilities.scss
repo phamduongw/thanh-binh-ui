@@ -126,6 +126,19 @@
   @extend %row-gap-16;
 }
 
+%column-gap-22 {
+  column-gap: 22px;
+}
+
+%row-gap-22 {
+  row-gap: 22px;
+}
+
+%gap-22 {
+  @extend %column-gap-22;
+  @extend %row-gap-22;
+}
+
 %column-gap-24 {
   column-gap: 24px;
 }
@@ -411,8 +424,8 @@
 
 // White Space
 
-%white-space-initial {
-  white-space: initial;
+%white-space-normal {
+  white-space: normal;
 }
 
 %white-space-nowrap {
