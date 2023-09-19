@@ -30,7 +30,7 @@
 
 .card-wrap {
   @extend %row-gap-32;
-  @extend %white-space-initial;
+  @extend %white-space-normal;
 
   @include media($sm) {
     padding-top: 38px;
@@ -82,19 +82,24 @@
   @include media(0, $md) {
     left: 50%;
     bottom: 0;
-    column-gap: 64px;
+
     transform: translateX(-50%);
+  }
+
+  @include media($sm) {
+    column-gap: 64px;
   }
 
   @include media($md) {
     right: 22px;
+    column-gap: 34px;
   }
 
   @include media($lg) {
     right: 24px;
   }
 
-  column-gap: 34px;
+  column-gap: 44px;
 }
 
 .chevron-btn {

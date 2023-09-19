@@ -22,15 +22,15 @@ const GuaranteeCard = ({ icon: Icon, title, content }) => {
   useEffect(() => {
     detailRef.current.style.height = `${detailRef.current.scrollHeight}px`;
     const timeoutId = isDetailOpen
-      ? setTimeout(setHeightToInitial, 300)
+      ? setTimeout(setHeightToAuto, 300)
       : setTimeout(disableStyleInline, 0);
     return () => {
       clearTimeout(timeoutId);
     };
   }, [isDetailOpen]);
 
-  const setHeightToInitial = useCallback(() => {
-    detailRef.current.style.height = 'initial';
+  const setHeightToAuto = useCallback(() => {
+    detailRef.current.style.height = 'auto';
   }, []);
 
   const disableStyleInline = useCallback(() => {

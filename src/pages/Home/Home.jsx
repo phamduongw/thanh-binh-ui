@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 
+import CallToAction from './CallToAction';
 import Hero from './Hero';
 import OurGuarantee from './OurGuarantee';
 import OurServices from './OurServices';
@@ -16,6 +17,7 @@ const Home = ({ title }) => (
     <OurGuarantee />
     <OurWork />
     <Reviews />
+    <CallToAction />
   </main>
 );
 
