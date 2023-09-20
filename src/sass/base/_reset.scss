@@ -55,6 +55,11 @@ svg {
   vertical-align: bottom;
 }
 
+img {
+  @extend %width-full;
+  @extend %object-fit-cover;
+}
+
 input,
 textarea {
   @extend %width-full;

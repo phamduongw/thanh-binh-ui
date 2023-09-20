@@ -71,6 +71,14 @@
   align-items: center;
 }
 
+%align-start {
+  align-items: flex-start;
+}
+
+%align-self-end {
+  align-self: end;
+}
+
 %algin-self-center {
   align-self: center;
 }

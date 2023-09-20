@@ -44,7 +44,7 @@ const GuaranteeCard = ({ icon: Icon, title, content }) => {
   return (
     <article
       onClick={handleOpenDetail}
-      className={cx('card', 'guarantee-card')}
+      className={cx('card', 'card-effect', 'guarantee-card')}
     >
       <div className={cx('card-header')}>
         <div className={cx('card-heading')}>

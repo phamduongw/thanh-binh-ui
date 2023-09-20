@@ -15,7 +15,13 @@ const routes = {
   blog: {
     path: '/tin-tuc',
     title: 'Tin tức',
-    slugs: [],
+    slugs: [
+      '5-steps-to-achieving-business-goals',
+      'how-much-office-space-do-you-need-per-person',
+      'managing-your-mail-box',
+      'what-is-a-virtual-office',
+      'how-coworking-spaces-promote-creativity',
+    ],
   },
   contact: {
     path: '/lien-he',

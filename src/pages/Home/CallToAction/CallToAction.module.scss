@@ -43,10 +43,13 @@
   @extend %flex-col;
   @extend %justify-self-center;
   @extend %justify-center;
-  @extend %align-center;
   @extend %row-gap-22;
   @extend %text-white-fc;
   @extend %text-center;
+
+  @include media($sm) {
+    align-items: center;
+  }
 
   @include media($lg) {
     align-items: flex-end;

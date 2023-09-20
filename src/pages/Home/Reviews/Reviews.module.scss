@@ -29,6 +29,7 @@
 }
 
 .card-wrap {
+  @extend %flex-col;
   @extend %row-gap-32;
   @extend %white-space-normal;
 
