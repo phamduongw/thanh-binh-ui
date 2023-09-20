@@ -21,7 +21,6 @@
 
 .section-container-grid {
   @extend %grid;
-  @extend %gap-40;
   @extend %container;
 }
 
@@ -68,8 +67,6 @@
 }
 
 .card {
-  @extend %flex-col;
-  @extend %justify-between;
   @extend %bg-white-fc;
   @extend %border;
   @extend %bc-white-e6;
@@ -79,6 +76,13 @@
 
   transition: border-color 0.3s, transform 0.3s;
   will-change: border-color, transform;
+}
+
+.card-effect {
+  &:hover {
+    @extend %bc-blue-2e;
+    transform: translateY(-4px);
+  }
 }
 
 .rotate-animated {
@@ -97,7 +101,18 @@
 }
 
 .rounded-image {
-  @extend %width-full;
   @extend %br-32;
-  @extend %object-fit-cover;
+}
+
+.collection {
+  @extend %grid;
+  @extend %gap-24;
+
+  @include media($md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media($lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

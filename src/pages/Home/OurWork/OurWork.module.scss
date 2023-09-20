@@ -1,6 +1,8 @@
 @import '~/sass/main';
 
 .grid-layout {
+  @extend %gap-40;
+
   @include media($lg) {
     grid-template-columns: minmax(400px, 0.65fr) 1fr;
   }

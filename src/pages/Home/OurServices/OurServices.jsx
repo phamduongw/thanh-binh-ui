@@ -14,8 +14,11 @@ import config from '~/config';
 
 const cx = classNames.bind(styles);
 
-const ServiceCard = ({ icon: Icon, title, subtitle, handleViewDetail }) => (
-  <article onClick={handleViewDetail} className={cx('card', 'service-card')}>
+const ServiceCard = ({ icon: Icon, title, subtitle, handleLearnMore }) => (
+  <article
+    onClick={handleLearnMore}
+    className={cx('card', 'card-effect', 'service-card')}
+  >
     <div className={cx('card-detail')}>
       <div className={cx('card-heading')}>
         <Icon width={56} />
@@ -33,14 +36,14 @@ const ServiceCard = ({ icon: Icon, title, subtitle, handleViewDetail }) => (
 const ServiceList = () => {
   const navigate = useNavigate();
   return (
-    <div className={cx('service-list')}>
+    <div className="collection">
       {SERVICES.map(({ to, icon, title, subtitle }) => (
         <ServiceCard
           key={to}
           icon={icon}
           title={title}
           subtitle={subtitle}
-          handleViewDetail={() => {
+          handleLearnMore={() => {
             navigate(to);
           }}
         />

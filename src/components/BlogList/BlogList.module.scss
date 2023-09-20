@@ -1,0 +1,65 @@
+@import '~/sass/main';
+
+.grid-layout {
+  @include media(0, $md) {
+    row-gap: 32px;
+  }
+
+  grid-area: span 1 / span 2 / span 1 / span 2;
+}
+
+.blog-card {
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+
+  img {
+    transition: transform 0.3s;
+    will-change: transform;
+  }
+}
+
+.poster-wrap {
+  @extend %overflow-hidden;
+
+  border-radius: 32px 32px 0 0;
+}
+
+.card-detail {
+  @extend %flex-col;
+  @extend %align-start;
+  @extend %row-gap-8;
+
+  @include media($md) {
+    row-gap: 12px;
+  }
+
+  padding: 32px 32px 40px;
+
+  span {
+    @extend %flex;
+    @extend %bg-white-e6;
+    @extend %text-blue-2e;
+    @extend %text-small;
+    @extend %text-700;
+
+    padding: 6px 12px;
+    border-radius: 20px;
+  }
+
+  div {
+    @extend %text-large;
+    @extend %text-500;
+  }
+
+  p {
+    @extend %text-gray-71;
+    @extend %overflow-hidden;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+}

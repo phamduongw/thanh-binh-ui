@@ -46,9 +46,10 @@ const Form = () => {
 
 const Top = () => (
   <div className={cx('wrapper')}>
-    <div className="footer-title">Đăng ký theo dõi</div>
+    <div className="footer-title">Theo dõi chúng tôi</div>
     <Paragraph gray9c>
-      Đăng ký để nhận tin tức và chương trình khuyến mãi mới nhất của chúng tôi!
+      Đăng ký để cập nhật tin tức và chương trình khuyến mãi mới nhất của chúng
+      tôi!
     </Paragraph>
     <Form />
   </div>

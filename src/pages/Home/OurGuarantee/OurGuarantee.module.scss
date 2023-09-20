@@ -1,6 +1,8 @@
 @import '~/sass/main';
 
 .grid-layout {
+  @extend %gap-40;
+
   @include media($lg) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -36,7 +38,6 @@
   padding: 32px 20px;
 
   &:hover {
-    @extend %bc-blue-2e;
     transform: scale(0.98);
   }
 }
