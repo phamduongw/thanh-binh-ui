@@ -4,6 +4,8 @@ import CallToAction from '~/components/CallToAction';
 import Paragraph from '~/components/Paragraph';
 import ServiceList from '~/components/ServiceList';
 
+import SERVICES from '~/data/SERVICES';
+
 const Services = ({ title }) => (
   <main>
     <Helmet>
@@ -19,7 +21,7 @@ const Services = ({ title }) => (
             mi, ut lobortis felis. Nunc molestie dolor ut vehicula viverra.
           </Paragraph>
         </div>
-        <ServiceList />
+        <ServiceList data={SERVICES} />
       </div>
     </section>
     <CallToAction />

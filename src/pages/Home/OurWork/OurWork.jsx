@@ -49,10 +49,10 @@ const OurWork = () => (
     <div className={cx('section-container-grid', 'grid-layout')}>
       <Detail />
       <ModalVideo
+        h100
         srcSet={`${poster500} 500w, ${poster800} 800w, ${poster1080} 1080w`}
         sizes="(max-width: 479px) 92vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 711px"
         posterSrc={poster1080}
-        posterClassName={cx('poster-size')}
         videoSrc="https://www.youtube.com/embed/_cWvRzt6Dpk?si=hH6cBgVn0dBIPfT1"
       />
     </div>

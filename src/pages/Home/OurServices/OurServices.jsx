@@ -1,6 +1,8 @@
 import Button from '~/components/Button';
 import ServiceList from '~/components/ServiceList';
 
+import SERVICES from '~/data/SERVICES';
+
 import config from '~/config';
 
 const OurServices = () => (
@@ -12,7 +14,7 @@ const OurServices = () => (
           Giải pháp in ấn linh hoạt - Hãy lựa chọn dich vụ phù hợp nhất với bạn
         </h2>
       </div>
-      <ServiceList />
+      <ServiceList data={SERVICES} />
       <Button to={config.routes.services.path} button primary>
         Tất cả dịch vụ
       </Button>

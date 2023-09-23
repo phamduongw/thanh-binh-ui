@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import styles from './BlogList.module.scss';
 
-import Paragraph from '../Paragraph';
+import Image from '~/components/Image';
+import Paragraph from '~/components/Paragraph';
 
 const cx = classNames.bind(styles);
 
@@ -13,7 +14,7 @@ const BlogCard = ({ poster, tag, title, excerpt, handleLearnMore }) => (
     className={cx('card', 'card-effect', 'blog-card')}
   >
     <div className={cx('poster-wrap')}>
-      <img src={poster} alt="poster" />
+      <Image w100 src={poster} alt="poster" className={cx('poster')} />
     </div>
     <div className={cx('card-detail')}>
       <span>{tag}</span>

@@ -4,20 +4,23 @@ import classNames from 'classnames/bind';
 import styles from './ModalVideo.module.scss';
 
 import Button from '~/components/Button';
+import Image from '~/components/Image';
 import Loading from '~/components/Loading';
 
 import { PlayIcon } from '~/components/Icons';
 
 const cx = classNames.bind(styles);
 
-const Poster = memo(({ srcSet, sizes, src, handleCloseModal, className }) => (
+const Poster = memo(({ h100, w100, srcSet, sizes, src, handleCloseModal }) => (
   <>
-    <img
+    <Image
+      h100={h100}
+      w100={w100}
       srcSet={srcSet}
       sizes={sizes}
       src={src}
       alt="poster"
-      className={cx('rounded-image', className)}
+      className="rounded-image"
     />
     <div className={cx('poster-overlay')}>
       <Button
@@ -32,13 +35,7 @@ const Poster = memo(({ srcSet, sizes, src, handleCloseModal, className }) => (
 
 Poster.displayName = 'Poster';
 
-const ModalVideo = ({
-  srcSet,
-  sizes,
-  posterSrc,
-  posterClassName,
-  videoSrc,
-}) => {
+const ModalVideo = ({ h100, w100, srcSet, sizes, posterSrc, videoSrc }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isIframeLoading, setIsLoading] = useState(false);
 
@@ -60,11 +57,12 @@ const ModalVideo = ({
   return (
     <div className={cx('wrapper')}>
       <Poster
+        h100={h100}
+        w100={w100}
         srcSet={srcSet}
         sizes={sizes}
         src={posterSrc}
         handleCloseModal={handleOpenModal}
-        className={posterClassName}
       />
       {isModalOpen && (
         <div onClick={handleCloseModal} className={cx('container')}>

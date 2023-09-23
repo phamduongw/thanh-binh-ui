@@ -45,22 +45,22 @@
 
   padding: 30px 32px;
   cursor: auto;
+}
 
-  & > img {
-    @extend %width-fit-content;
+.brand-image {
+  @extend %width-fit-content;
 
-    height: 46px;
-  }
+  height: 46px;
 }
 
 .card-name {
   @extend %flex;
   @extend %align-center;
   @extend %column-gap-16;
+}
 
-  img {
-    width: 72px;
-  }
+.avatar-image {
+  width: 72px;
 }
 
 .name {
