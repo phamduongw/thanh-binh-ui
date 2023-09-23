@@ -1,7 +1,0 @@
-@import '~/sass/main';
-
-.content {
-  @include media($sm) {
-    align-items: center;
-  }
-}

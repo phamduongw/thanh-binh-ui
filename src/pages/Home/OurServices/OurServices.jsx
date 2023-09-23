@@ -1,16 +1,11 @@
-import classNames from 'classnames/bind';
-import styles from './OurServices.module.scss';
-
 import Button from '~/components/Button';
 import ServiceList from '~/components/ServiceList';
 
 import config from '~/config';
 
-const cx = classNames.bind(styles);
-
 const OurServices = () => (
   <section className="section-wrapper">
-    <div className={cx('section-container-flex', 'content')}>
+    <div className="section-container-flex align-center">
       <div className="section-heading text-center">
         <div className="section-title">Dịch vụ</div>
         <h2>

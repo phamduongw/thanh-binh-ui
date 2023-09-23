@@ -10,10 +10,11 @@ const Button = forwardRef(
   (
     {
       to,
-      button = false,
-      primary = false,
-      secondary = false,
-      small = false,
+      button,
+      primary,
+      secondary,
+      small,
+      fit,
       children,
       onClick,
       className,
@@ -35,8 +36,9 @@ const Button = forwardRef(
     const classes = cx({
       button,
       primary,
-      small,
       secondary,
+      small,
+      fit,
       [className]: className,
     });
 

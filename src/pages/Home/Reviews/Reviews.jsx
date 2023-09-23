@@ -4,6 +4,7 @@ import classNames from 'classnames/bind';
 import styles from './Reviews.module.scss';
 
 import Button from '~/components/Button';
+import Paragraph from '~/components/Paragraph';
 
 import { LeftChevronIcon, RightChevronIcon } from '~/components/Icons';
 
@@ -45,7 +46,7 @@ const SliderCard = ({ brand, content, avatar, name, company }) => (
   <article className={cx('slider-card')}>
     <div className={cx('card', 'card-wrap')}>
       <img src={brand} alt="brand" />
-      <p>{content}</p>
+      <Paragraph italic>{content}</Paragraph>
       <div className={cx('card-name')}>
         <img src={avatar} alt="avatar" />
         <div>

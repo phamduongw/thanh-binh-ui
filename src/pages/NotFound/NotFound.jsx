@@ -4,6 +4,7 @@ import classNames from 'classnames/bind';
 import styles from './NotFound.module.scss';
 
 import Button from '~/components/Button';
+import Paragraph from '~/components/Paragraph';
 
 import { NotFoundIcon } from '~/components/Icons';
 
@@ -19,7 +20,9 @@ const NotFound = () => (
         <NotFoundIcon />
         <h2>Page Not Found</h2>
       </div>
-      <p>The page you are looking for doesn't exist or has been moved</p>
+      <Paragraph>
+        The page you are looking for doesn't exist or has been moved
+      </Paragraph>
       <Button to="/" button primary>
         Return Home
       </Button>

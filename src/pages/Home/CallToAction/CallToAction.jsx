@@ -10,13 +10,13 @@ import config from '~/config';
 const cx = classNames.bind(styles);
 
 const CallToAction = () => (
-  <section className={cx('container', 'thin-padding')}>
+  <section className="container thin-padding">
     <div className={cx('wrapper')}>
       <CallToActionIcon className={cx('cta-icon')} />
       <div className={cx('heading')}>
         <h2>Grow your business with us today</h2>
         <Button to={config.routes.contact.path} button primary>
-          Let’s Get in Touch
+          Let's Get in Touch
         </Button>
       </div>
     </div>

@@ -20,8 +20,9 @@ const Logo = ({ className }) => {
   return (
     <Button
       to={config.routes.home.path}
+      fit
       onClick={handleCloseMenu}
-      className={cx('svg-animated', 'wrapper', className)}
+      className={cx('svg-animated', className)}
     >
       <LogoIcon className={cx('logo')} />
     </Button>
