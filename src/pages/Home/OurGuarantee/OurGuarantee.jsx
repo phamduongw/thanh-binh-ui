@@ -3,6 +3,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import classNames from 'classnames/bind';
 import styles from './OurGuarantee.module.scss';
 
+import Image from '~/components/Image';
 import Paragraph from '~/components/Paragraph';
 
 import { PlusIcon } from '~/components/Icons';
@@ -74,7 +75,7 @@ const GuaranteeList = () => (
 
 const OurGuarantee = () => (
   <section className={cx('section-container-grid', 'grid-layout')}>
-    <img
+    <Image
       srcSet={`${guarantee500} 500w, ${guarantee800} 800w, ${guarantee1044} 1044w`}
       sizes="(max-width: 479px) 100vw, (max-width: 767px) 93vw, (max-width: 991px) 520px, 46vw"
       src={guarantee1044}

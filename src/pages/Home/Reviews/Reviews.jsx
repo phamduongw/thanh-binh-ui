@@ -4,6 +4,7 @@ import classNames from 'classnames/bind';
 import styles from './Reviews.module.scss';
 
 import Button from '~/components/Button';
+import Image from '~/components/Image';
 import Paragraph from '~/components/Paragraph';
 
 import { LeftChevronIcon, RightChevronIcon } from '~/components/Icons';
@@ -45,10 +46,10 @@ const Navigation = ({ sliderRef }) => {
 const SliderCard = ({ brand, content, avatar, name, company }) => (
   <article className={cx('slider-card')}>
     <div className={cx('card', 'card-wrap')}>
-      <img src={brand} alt="brand" />
+      <Image src={brand} alt="brand" className={cx('brand-image')} />
       <Paragraph italic>{content}</Paragraph>
       <div className={cx('card-name')}>
-        <img src={avatar} alt="avatar" />
+        <Image src={avatar} alt="avatar" className={cx('avatar-image')} />
         <div>
           <div className={cx('name')}>{name}</div>
           <div className={cx('company')}>{company}</div>

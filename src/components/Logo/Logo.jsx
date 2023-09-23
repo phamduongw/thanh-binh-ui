@@ -4,9 +4,9 @@ import styles from './Logo.module.scss';
 import { useDispatch } from 'react-redux';
 import { closeMenu } from '~/redux/slice/headerSlice';
 
-import Button from '../Button';
+import Button from '~/components/Button';
 
-import { LogoIcon } from '../Icons';
+import { LogoIcon } from '~/components/Icons';
 
 import config from '~/config';
 

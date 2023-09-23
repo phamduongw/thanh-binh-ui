@@ -8,16 +8,9 @@
   grid-area: span 1 / span 2 / span 1 / span 2;
 }
 
-.blog-card {
-  &:hover {
-    img {
-      transform: scale(1.1);
-    }
-  }
-
-  img {
-    transition: transform 0.3s;
-    will-change: transform;
+.blog-card:hover {
+  .poster {
+    transform: scale(1.1);
   }
 }
 
@@ -25,6 +18,11 @@
   @extend %overflow-hidden;
 
   border-radius: 32px 32px 0 0;
+}
+
+.poster {
+  transition: transform 0.3s;
+  will-change: transform;
 }
 
 .card-detail {

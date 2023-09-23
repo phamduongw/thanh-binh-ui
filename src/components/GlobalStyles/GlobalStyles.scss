@@ -48,6 +48,22 @@
   padding-top: 28px;
 }
 
+.thin-bottom-padding {
+  @include media($sm) {
+    padding-bottom: 32px;
+  }
+
+  @include media($md) {
+    padding-bottom: 36px;
+  }
+
+  @include media($lg) {
+    padding-bottom: 60px;
+  }
+
+  padding-bottom: 28px;
+}
+
 .section-wrapper {
   @extend %bg-white-f4;
 }
@@ -139,4 +155,10 @@
   @include media($lg) {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.back-to-all-btn {
+  @extend %text-blue-2e;
+  @extend %text-500;
+  @extend %text-hover-blue-43;
 }

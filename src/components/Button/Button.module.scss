@@ -3,6 +3,7 @@
 .button {
   @extend %border;
   @extend %br-14;
+  @extend %line-height-100;
 
   @include media($sm) {
     display: inline-block;
@@ -10,7 +11,6 @@
 
   display: block;
   padding: 22px 24px;
-  line-height: 1;
   transition: background-color 0.2s, border-color 0.2s, scale 0.2s;
   will-change: background-color, border-color, scale;
 

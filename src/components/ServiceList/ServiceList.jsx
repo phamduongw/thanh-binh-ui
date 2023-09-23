@@ -7,8 +7,6 @@ import Paragraph from '~/components/Paragraph';
 
 import { RightChevronIcon } from '~/components/Icons';
 
-import SERVICES from '~/data/SERVICES';
-
 const cx = classNames.bind(styles);
 
 const ServiceCard = ({ icon: Icon, title, subtitle, handleLearnMore }) => (
@@ -30,13 +28,13 @@ const ServiceCard = ({ icon: Icon, title, subtitle, handleLearnMore }) => (
   </article>
 );
 
-const ServiceList = () => {
+const ServiceList = ({ data }) => {
   const navigate = useNavigate();
   return (
     <div className="collection">
-      {SERVICES.map(({ to, icon, title, subtitle }) => (
+      {data.map(({ id, to, icon, title, subtitle }) => (
         <ServiceCard
-          key={to}
+          key={id}
           icon={icon}
           title={title}
           subtitle={subtitle}

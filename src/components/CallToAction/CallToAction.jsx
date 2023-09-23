@@ -1,14 +1,16 @@
+import { memo } from 'react';
+
 import classNames from 'classnames/bind';
 import styles from './CallToAction.module.scss';
 
 import Button from '~/components/Button';
-import Paragraph from '../Paragraph';
+import Paragraph from '~/components/Paragraph';
 
 import config from '~/config';
 
 const cx = classNames.bind(styles);
 
-const CallToAction = () => (
+const CallToAction = memo(() => (
   <section className="container thin-top-padding">
     <div className={cx('wrapper')}>
       <div className={cx('content')}>
@@ -23,6 +25,8 @@ const CallToAction = () => (
       </div>
     </div>
   </section>
-);
+));
+
+CallToAction.displayName = 'CallToAction';
 
 export default CallToAction;

@@ -13,22 +13,6 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 24px;
   }
-
-  img {
-    @extend %justify-self-center;
-
-    @include media($sm) {
-      width: 602px;
-      max-width: 90%;
-    }
-
-    @include media($md) {
-      max-width: 100%;
-    }
-
-    width: 600px;
-    max-width: 95%;
-  }
 }
 
 .heading {
@@ -64,4 +48,20 @@
     flex-direction: column;
     width: 100%;
   }
+}
+
+.hero-image {
+  @extend %justify-self-center;
+
+  @include media($sm) {
+    width: 602px;
+    max-width: 90%;
+  }
+
+  @include media($md) {
+    max-width: 100%;
+  }
+
+  width: 600px;
+  max-width: 95%;
 }

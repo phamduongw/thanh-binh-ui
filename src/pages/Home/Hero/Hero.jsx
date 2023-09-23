@@ -2,6 +2,7 @@ import classNames from 'classnames/bind';
 import styles from './Hero.module.scss';
 
 import Button from '~/components/Button';
+import Image from '~/components/Image';
 import Paragraph from '~/components/Paragraph';
 
 import hero500 from '~/assets/images/home/hero500.png';
@@ -33,11 +34,12 @@ const Hero = () => (
         </Button>
       </div>
     </div>
-    <img
+    <Image
       srcSet={`${hero500} 500w, ${hero800} 800w, ${hero1204} 1204w`}
       sizes="(max-width: 479px) 100vw, (max-width: 767px) 83vw, (max-width: 991px) 602px, 47vw"
       src={hero1204}
       alt="hero"
+      className={cx('hero-image')}
     />
   </section>
 );
