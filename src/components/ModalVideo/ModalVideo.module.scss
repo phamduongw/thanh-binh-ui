@@ -1,0 +1,28 @@
+@import '~/sass/main';
+
+.wrapper {
+  @extend %relative;
+}
+
+.poster-overlay {
+  @extend %absolute;
+  @extend %flex-center;
+  @extend %inset-0;
+  @extend %br-32;
+
+  background-color: rgba(24, 41, 68, 0.4);
+}
+
+.play-btn {
+  @extend %br-99;
+  @extend %overflow-hidden;
+}
+
+.container {
+  @extend %fixed;
+  @extend %flex-center;
+  @extend %inset-0;
+  @extend %z-index-99;
+
+  background-color: rgba(0, 0, 0, 0.9);
+}

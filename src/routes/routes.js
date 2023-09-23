@@ -5,11 +5,29 @@ import Blog from '~/pages/Blog';
 import BlogDetail from '~/pages/Blog/BlogDetail/';
 import Contact from '~/pages/Contact';
 import Home from '~/pages/Home';
-import NotFound from '~/pages/NotFound';
 import ServiceDetail from '~/pages/Services/ServiceDetail';
 import Services from '~/pages/Services';
 
 const publicRoutes = [
+  {
+    path: config.routes.about.path,
+    title: config.routes.about.title,
+    component: About,
+  },
+  {
+    path: config.routes.blog.path,
+    title: config.routes.blog.title,
+    slugs: config.routes.blog.slugs,
+    component: {
+      parent: Blog,
+      child: BlogDetail,
+    },
+  },
+  {
+    path: config.routes.contact.path,
+    title: config.routes.contact.title,
+    component: Contact,
+  },
   {
     path: config.routes.home.path,
     title: config.routes.home.title,
@@ -23,25 +41,6 @@ const publicRoutes = [
       parent: Services,
       child: ServiceDetail,
     },
-  },
-  {
-    path: config.routes.blog.path,
-    title: config.routes.blog.title,
-    slugs: config.routes.blog.slugs,
-    component: {
-      parent: Blog,
-      child: BlogDetail,
-    },
-  },
-  {
-    path: config.routes.about.path,
-    title: config.routes.about.title,
-    component: About,
-  },
-  {
-    path: config.routes.contact.path,
-    title: config.routes.contact.title,
-    component: Contact,
   },
 ];
 

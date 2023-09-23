@@ -1,37 +1,31 @@
 const routes = {
   home: {
     path: '/',
-    title: 'Home',
+    title: 'Trang chủ',
   },
   services: {
-    path: '/services',
-    title: 'Services',
-    slugs: [
-      'office-space',
-      'dedicated-desk',
-      'coworking-space',
-      'virtual-office',
-      'meeting-room',
-    ],
-  },
-  blog: {
-    path: '/blog',
-    title: 'Locations',
-    slugs: [
-      'how-coworking-spaces-promote-creativity',
-      'what-is-a-virtual-office',
-      'managing-your-mail-box',
-      'how-much-office-space-do-you-need-per-person',
-      '5-steps-to-achieving-business-goals',
-    ],
+    path: '/dich-vu',
+    title: 'Dịch vụ',
+    slugs: ['in-sach', 'in-catalogue', 'in-lich', 'in-tap-chi', 'in-hop-qua'],
   },
   about: {
-    path: '/about',
-    title: 'About',
+    path: '/gioi-thieu',
+    title: 'Giới thiệu',
+  },
+  blog: {
+    path: '/tin-tuc',
+    title: 'Tin tức',
+    slugs: [
+      '5-steps-to-achieving-business-goals',
+      'how-much-office-space-do-you-need-per-person',
+      'managing-your-mail-box',
+      'what-is-a-virtual-office',
+      'how-coworking-spaces-promote-creativity',
+    ],
   },
   contact: {
-    path: '/contact',
-    title: 'Blog',
+    path: '/lien-he',
+    title: 'Liên hệ',
   },
 };
 

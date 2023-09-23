@@ -4,6 +4,7 @@ import classNames from 'classnames/bind';
 import styles from './Actions.module.scss';
 
 import Button from '~/components/Button';
+
 import { PhoneIcon } from '~/components/Icons';
 
 import config from '~/config';
@@ -19,11 +20,11 @@ const Actions = memo(({ desktop, responsive, handleCloseMenu }) => (
   >
     <Button
       to={config.routes.contact.path}
-      className={cx('contact')}
       onClick={handleCloseMenu}
+      className={cx('contact')}
     >
       <PhoneIcon />
-      <span>+1 234-567-8910</span>
+      <span>+84 979-336-872</span>
     </Button>
     <Button
       to={config.routes.contact.path}
@@ -32,7 +33,7 @@ const Actions = memo(({ desktop, responsive, handleCloseMenu }) => (
       small
       onClick={handleCloseMenu}
     >
-      Enquire
+      Nhận tư vấn
     </Button>
   </div>
 ));

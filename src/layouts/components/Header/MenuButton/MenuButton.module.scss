@@ -4,18 +4,18 @@
   @extend %relative;
   @extend %flex-col;
   @extend %justify-center;
-  @extend %h-full;
+  @extend %height-full;
 
   @include media($lg) {
     display: none;
   }
 
-  gap: 5px;
+  row-gap: 5px;
 }
 
 .bar {
-  @extend %br-99;
   @extend %bg-blue-2e;
+  @extend %br-99;
 
   width: 32px;
   height: 3px;

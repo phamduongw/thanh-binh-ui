@@ -4,8 +4,115 @@
   @extend %text-blue-43;
 }
 
-.title {
+.section-wrapper {
+  @extend %bg-white-f4;
+}
+
+.section-container-flex {
+  @extend %relative;
+  @extend %flex-col;
+  @extend %row-gap-40;
+  @extend %container;
+
+  @include media($md) {
+    row-gap: 48px;
+  }
+}
+
+.section-container-grid {
+  @extend %grid;
+  @extend %container;
+}
+
+.thin-padding {
+  @include media($sm) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  @include media($md) {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  @include media($lg) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.section-heading {
+  @extend %flex-col;
+  @extend %row-gap-8;
+
+  max-width: 648px;
+
+  &.text-center {
+    @extend %text-center;
+  }
+}
+
+.section-title {
+  @extend %text-blue-2e;
+  @extend %text-700;
+}
+
+.footer-title {
   @extend %text-blue-2e;
   @extend %text-large;
   @extend %text-500;
+}
+
+.card {
+  @extend %bg-white-fc;
+  @extend %border;
+  @extend %bc-white-e6;
+  @extend %br-32;
+  @extend %card-box-shadow;
+  @extend %cursor-pointer;
+
+  transition: border-color 0.3s, transform 0.3s;
+  will-change: border-color, transform;
+}
+
+.card-effect {
+  &:hover {
+    @extend %bc-blue-2e;
+    transform: translateY(-4px);
+  }
+}
+
+.rotate-animated {
+  transition: rotate 0.3s;
+  will-change: rotate;
+}
+
+.svg-animated {
+  transition: filter 0.2s, scale 0.2s;
+  will-change: filter, scale;
+
+  &:hover {
+    filter: brightness(1.15);
+    scale: 0.98;
+  }
+}
+
+.rounded-image {
+  @extend %br-32;
+}
+
+.collection {
+  @extend %grid;
+  @extend %gap-24;
+
+  @include media($md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media($lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

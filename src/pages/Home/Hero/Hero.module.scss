@@ -1,0 +1,75 @@
+@import '~/sass/main';
+
+.wrapper {
+  @extend %grid;
+  @extend %row-gap-40;
+  @extend %container;
+
+  @include media($sm) {
+    row-gap: 22px;
+    padding-top: 32px;
+  }
+
+  @include media($md) {
+    padding-top: 36px;
+  }
+
+  @include media($lg) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    padding-top: 60px;
+  }
+
+  padding-top: 28px;
+
+  img {
+    @extend %justify-self-center;
+
+    @include media($sm) {
+      width: 602px;
+      max-width: 90%;
+    }
+
+    @include media($md) {
+      max-width: 100%;
+    }
+
+    width: 600px;
+    max-width: 95%;
+  }
+}
+
+.heading {
+  @extend %flex-col;
+  @extend %algin-self-center;
+  @extend %row-gap-32;
+
+  @include media(0, $lg) {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.text-wrap {
+  @extend %flex-col;
+  @extend %row-gap-16;
+
+  h1 {
+    @include media($lg) {
+      font-size: 5.493rem;
+    }
+    span {
+      @extend %text-blue-2e;
+    }
+  }
+}
+
+.btn-wrap {
+  @extend %flex;
+  @extend %gap-16;
+
+  @include media(0, $sm) {
+    flex-direction: column;
+    width: 100%;
+  }
+}

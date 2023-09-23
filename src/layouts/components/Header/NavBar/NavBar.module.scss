@@ -4,12 +4,6 @@
   @extend %container-padding;
   @extend %bg-white-fc;
 
-  @include media($lg) {
-    display: flex;
-    gap: 40px;
-    padding: 0;
-  }
-
   @include media(0, $lg) {
     position: absolute;
     top: 100%;
@@ -20,6 +14,12 @@
     z-index: -1;
     visibility: hidden;
     transform: translateY(-100%);
+  }
+
+  @include media($lg) {
+    display: flex;
+    column-gap: 40px;
+    padding: 0;
   }
 }
 

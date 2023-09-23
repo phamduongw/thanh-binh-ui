@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 import { closeMenu } from '~/redux/slice/headerSlice';
 
 import Button from '../Button';
+
 import { LogoIcon } from '../Icons';
 
 import config from '~/config';
@@ -14,11 +15,13 @@ const cx = classNames.bind(styles);
 const Logo = ({ className }) => {
   const dispatch = useDispatch();
 
+  const handleCloseMenu = () => dispatch(closeMenu());
+
   return (
     <Button
       to={config.routes.home.path}
-      className={cx('wrapper', className)}
-      onClick={() => dispatch(closeMenu())}
+      onClick={handleCloseMenu}
+      className={cx('svg-animated', 'wrapper', className)}
     >
       <LogoIcon className={cx('logo')} />
     </Button>

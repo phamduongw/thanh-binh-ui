@@ -7,7 +7,8 @@
 .toggle {
   @extend %flex;
   @extend %align-center;
-  @extend %w-full;
+  @extend %column-gap-8;
+  @extend %width-full;
   @extend %nav-item;
   @extend %transition-color;
 
@@ -18,22 +19,16 @@
       color: $blue-2e;
     }
   }
-
-  gap: 8px;
 }
 
 .rotate {
   rotate: -180deg;
 }
 
-.rotate-animated {
-  transition: rotate 0.3s;
-  will-change: rotate;
-}
-
 .drop-down {
   @extend %flex-col;
   @extend %bg-white-fc;
+  @extend %overflow-hidden;
 
   @include media($lg) {
     position: absolute;
@@ -55,7 +50,6 @@
   }
 
   max-height: 0;
-  overflow: hidden;
 
   &:hover {
     @extend %bc-blue-2e;
@@ -73,19 +67,19 @@
 }
 
 .open {
+  @include media($sm) {
+    max-height: 266px;
+  }
+
+  @include media($md) {
+    max-height: 268px;
+  }
+
   @include media($lg) {
     max-height: inherit;
     opacity: 1;
     visibility: visible;
     transform: translateY(0) scale(1);
-  }
-
-  @include media($md, $lg) {
-    max-height: 268px;
-  }
-
-  @include media($sm, $md) {
-    max-height: 266px;
   }
 
   max-height: 394px;
@@ -102,8 +96,8 @@
 .service-item {
   @extend %flex;
   @extend %align-center;
+  @extend %column-gap-12;
 
-  gap: 12px;
   padding: 16px 24px;
   border-radius: 18px;
   transition: background-color 0.2s, color 0.2s;

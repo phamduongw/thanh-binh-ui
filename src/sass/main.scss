@@ -5,9 +5,3 @@
 @import 'base/fonts';
 @import 'base/animation';
 @import 'base/utilities.scss';
-
-main {
-  @extend %container;
-
-  height: 100vh;
-}

@@ -1,15 +1,16 @@
 @import '~/sass/main';
 
 .wrapper {
-  @include media($lg) {
-    padding: 120px 0;
+  @include media($sm) {
+    padding: 64px 0;
   }
-  @include media($md, $lg) {
+
+  @include media($md) {
     padding: 72px 0;
   }
 
-  @include media($sm, $md) {
-    padding: 64px 0;
+  @include media($lg) {
+    padding: 120px 0;
   }
 
   padding: 56px 0;
@@ -18,7 +19,6 @@
 
 .container {
   @extend %flex-col;
+  @extend %row-gap-64;
   @extend %container;
-
-  gap: 64px;
 }

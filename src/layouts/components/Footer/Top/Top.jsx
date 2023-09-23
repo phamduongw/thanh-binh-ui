@@ -5,18 +5,19 @@ import styles from './Top.module.scss';
 
 import Button from '~/components/Button';
 import Paragraph from '~/components/Paragraph';
+
 import { SendIcon } from '~/components/Icons';
 
 const cx = classNames.bind(styles);
 
 const Form = () => {
   const formRef = useRef();
-  const [isMessageOpen, setIsMessageOpen] = useState(false);
+  const [isMessageVisible, setIsMessageVisible] = useState(false);
 
   const handleSubmit = useCallback((event) => {
     event.preventDefault();
     setTimeout(() => {
-      setIsMessageOpen(true);
+      setIsMessageVisible(true);
     }, 500);
   }, []);
 
@@ -24,9 +25,9 @@ const Form = () => {
     <form ref={formRef} onSubmit={handleSubmit} className={cx('form')}>
       <input
         type="email"
-        placeholder="Your Email"
+        placeholder="Email của bạn"
         style={{
-          borderColor: isMessageOpen && 'transparent',
+          borderColor: isMessageVisible && 'transparent',
         }}
       />
       <Button className={cx('send-btn')}>
@@ -34,10 +35,10 @@ const Form = () => {
       </Button>
       <div
         className={cx('message', {
-          open: isMessageOpen,
+          hidden: !isMessageVisible,
         })}
       >
-        Thank you! Your submission has been received!
+        Chúng tôi đã nhận được yêu cầu. Cảm ơn bạn!
       </div>
     </form>
   );
@@ -45,9 +46,10 @@ const Form = () => {
 
 const Top = () => (
   <div className={cx('wrapper')}>
-    <div className="title">Subscribe to Our Newsletter</div>
+    <div className="footer-title">Theo dõi chúng tôi</div>
     <Paragraph gray9c>
-      Stay in the know! Subscribe for news and our latest promotions!
+      Đăng ký để cập nhật tin tức và chương trình khuyến mãi mới nhất của chúng
+      tôi!
     </Paragraph>
     <Form />
   </div>

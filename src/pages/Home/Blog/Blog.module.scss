@@ -1,0 +1,24 @@
+@import '~/sass/main';
+
+.grid-layout {
+  @extend %row-gap-32;
+
+  @include media($sm) {
+    row-gap: 40px;
+    grid-template-columns: minmax(230px, 1fr) 1fr;
+  }
+
+  @include media($md) {
+    row-gap: 48px;
+    grid-template-columns: minmax(450px, 1fr) 1fr;
+  }
+
+  @include media($lg) {
+    grid-template-columns: minmax(800px, 1fr) 1fr;
+  }
+}
+
+.view-all-btn {
+  @extend %justify-self-end;
+  @extend %align-self-end;
+}

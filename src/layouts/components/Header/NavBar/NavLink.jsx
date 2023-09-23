@@ -9,12 +9,12 @@ import config from '~/config';
 
 const NAV_LINK_ITEMS = [
   {
-    to: config.routes.blog.path,
-    name: config.routes.blog.title,
-  },
-  {
     to: config.routes.about.path,
     name: config.routes.about.title,
+  },
+  {
+    to: config.routes.blog.path,
+    name: config.routes.blog.title,
   },
   {
     to: config.routes.contact.path,
@@ -27,12 +27,12 @@ const cx = classNames.bind(styles);
 const NavLink = memo(({ pathname, handleCloseMenu }) =>
   NAV_LINK_ITEMS.map(({ to, name }) => (
     <Button
-      key={name}
+      key={to}
       to={to}
+      onClick={handleCloseMenu}
       className={cx('link', {
         'highlight-blue-43': to == pathname,
       })}
-      onClick={handleCloseMenu}
     >
       {name}
     </Button>

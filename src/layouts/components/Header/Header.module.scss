@@ -25,5 +25,5 @@
 }
 
 .logo {
-  align-self: center;
+  @extend %algin-self-center;
 }
