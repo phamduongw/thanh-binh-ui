@@ -5,39 +5,3 @@
     align-items: center;
   }
 }
-
-.service-card {
-  @extend %flex-col;
-  @extend %justify-between;
-  @extend %row-gap-16;
-
-  @include media($sm) {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-
-  @include media($lg) {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  padding: 40px 32px;
-}
-
-.card-detail {
-  @extend %flex-col;
-  @extend %row-gap-16;
-}
-
-.card-heading {
-  @extend %flex-col;
-  @extend %row-gap-12;
-}
-
-.learn-more-wrap {
-  @extend %flex;
-  @extend %text-blue-2e;
-  @extend %text-500;
-
-  column-gap: 4px;
-}
