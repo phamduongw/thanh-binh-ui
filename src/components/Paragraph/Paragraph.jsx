@@ -4,10 +4,11 @@ import styles from './Paragraph.module.scss';
 const cx = classNames.bind(styles);
 
 const Paragraph = ({
-  large = false,
-  small = false,
-  gray71 = false,
-  gray9c = false,
+  large,
+  small,
+  gray71,
+  gray9c,
+  italic,
   children,
   className,
 }) => (
@@ -17,6 +18,7 @@ const Paragraph = ({
       small,
       gray71,
       gray9c,
+      italic,
       [className]: className,
     })}
   >

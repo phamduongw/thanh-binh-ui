@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import styles from './BlogList.module.scss';
 
+import Paragraph from '../Paragraph';
+
 const cx = classNames.bind(styles);
 
 const BlogCard = ({ poster, tag, title, excerpt, handleLearnMore }) => (
@@ -16,7 +18,7 @@ const BlogCard = ({ poster, tag, title, excerpt, handleLearnMore }) => (
     <div className={cx('card-detail')}>
       <span>{tag}</span>
       <div>{title}</div>
-      <p>{excerpt}</p>
+      <Paragraph gray71>{excerpt}</Paragraph>
     </div>
   </article>
 );

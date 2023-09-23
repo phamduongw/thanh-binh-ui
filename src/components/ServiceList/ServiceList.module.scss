@@ -1,11 +1,5 @@
 @import '~/sass/main';
 
-.content {
-  @include media($sm) {
-    align-items: center;
-  }
-}
-
 .service-card {
   @extend %flex-col;
   @extend %justify-between;

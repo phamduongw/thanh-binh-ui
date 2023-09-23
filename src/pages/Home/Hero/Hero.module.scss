@@ -7,20 +7,12 @@
 
   @include media($sm) {
     row-gap: 22px;
-    padding-top: 32px;
-  }
-
-  @include media($md) {
-    padding-top: 36px;
   }
 
   @include media($lg) {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 24px;
-    padding-top: 60px;
   }
-
-  padding-top: 28px;
 
   img {
     @extend %justify-self-center;

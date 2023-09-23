@@ -1,9 +1,5 @@
 @import '~/sass/main';
 
-.wrapper {
-  @extend %width-fit-content;
-}
-
 .logo {
   @include media($lg) {
     height: 44px;

@@ -51,10 +51,6 @@
 
     height: 46px;
   }
-
-  p {
-    @extend %text-italic;
-  }
 }
 
 .card-name {

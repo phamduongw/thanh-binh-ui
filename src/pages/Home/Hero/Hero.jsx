@@ -13,7 +13,7 @@ import config from '~/config';
 const cx = classNames.bind(styles);
 
 const Hero = () => (
-  <section className={cx('wrapper')}>
+  <section className={cx('thin-top-padding', 'wrapper')}>
     <div className={cx('heading')}>
       <div className={cx('text-wrap')}>
         <h1>

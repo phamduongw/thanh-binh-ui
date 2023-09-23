@@ -1,9 +1,5 @@
 @import '~/sass/main';
 
-.container {
-  @extend %container;
-}
-
 .wrapper {
   @extend %grid;
   @extend %row-gap-22;
