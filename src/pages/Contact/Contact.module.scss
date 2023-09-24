@@ -1,0 +1,103 @@
+@import '~/sass/main';
+
+.grid-layout {
+  @extend %grid;
+  @extend %gap-32;
+
+  @include media($lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.info {
+  @extend %flex-col;
+
+  @include media($lg) {
+    row-gap: 32px;
+    max-width: 496px;
+    margin-right: 24px;
+  }
+
+  row-gap: 28px;
+}
+
+.content {
+  @extend %flex-col;
+  @extend %row-gap-20;
+
+  @include media($sm) {
+    max-width: 398px;
+  }
+}
+
+.info-card {
+  @extend %grid;
+  @extend %column-gap-16;
+  @extend %bg-white-f4;
+  @extend %transition-bg-200;
+
+  grid-template-columns: max-content 1fr;
+  height: 76px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 23px;
+
+  &:hover {
+    @extend %bg-white-e6;
+
+    .card-title {
+      @extend %text-blue-43;
+    }
+  }
+}
+
+.card-icon {
+  @extend %algin-self-center;
+
+  grid-area: span 2 / span 1 / span 2 / span 1;
+  width: 28px;
+}
+
+.card-title {
+  @extend %align-self-end;
+  @extend %text-blue-2e;
+  @extend %text-700;
+  @extend %transition-color;
+}
+
+.card-content {
+  @extend %white-space-nowrap;
+
+  align-self: start;
+  overflow: auto;
+}
+
+.form {
+  @extend %relative;
+  @extend %flex-col;
+  @extend %row-gap-24;
+  @extend %br-20;
+  @extend %card-box-shadow;
+
+  min-height: 725px;
+  padding: 40px;
+}
+
+.field {
+  @extend %flex-col;
+  @extend %row-gap-8;
+}
+
+.message-field {
+  height: 200px;
+  resize: none;
+}
+
+.form-overlay {
+  @extend %absolute;
+  @extend %inset-0;
+}
+
+.hidden {
+  @extend %visibility-hidden;
+}

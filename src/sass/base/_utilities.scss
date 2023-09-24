@@ -134,6 +134,19 @@
   @extend %row-gap-16;
 }
 
+%column-gap-20 {
+  column-gap: 20px;
+}
+
+%row-gap-20 {
+  row-gap: 20px;
+}
+
+%gap-20 {
+  @extend %column-gap-20;
+  @extend %row-gap-20;
+}
+
 %column-gap-22 {
   column-gap: 22px;
 }
@@ -326,6 +339,10 @@
   border-radius: 14px;
 }
 
+%br-20 {
+  border-radius: 20px;
+}
+
 %br-32 {
   border-radius: 32px;
 }
@@ -464,6 +481,12 @@
   aspect-ratio: 16 / 9;
 }
 
+// Visibility
+
+%visibility-hidden {
+  visibility: hidden;
+}
+
 // Customize
 
 %container {
@@ -476,4 +499,9 @@
 %nav-item {
   height: 60px;
   font-size: 1.8rem;
+}
+
+%transition-bg-200 {
+  transition: background-color 0.2s;
+  will-change: background-color;
 }
