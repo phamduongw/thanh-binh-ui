@@ -26,6 +26,7 @@ const Form = () => {
       <input
         type="email"
         placeholder="Email của bạn"
+        required
         style={{
           borderColor: isMessageVisible && 'transparent',
         }}

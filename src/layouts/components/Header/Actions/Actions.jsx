@@ -23,7 +23,7 @@ const Actions = memo(({ desktop, responsive, handleCloseMenu }) => (
       onClick={handleCloseMenu}
       className={cx('contact')}
     >
-      <PhoneIcon />
+      <PhoneIcon width={24} />
       <span>+84 979-336-872</span>
     </Button>
     <Button

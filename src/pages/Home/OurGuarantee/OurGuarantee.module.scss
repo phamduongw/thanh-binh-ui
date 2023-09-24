@@ -36,8 +36,13 @@
   }
 
   padding: 32px 20px;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+  will-change: background-color, border-color, transform;
 
   &:hover {
+    @extend %bg-white-f4;
+    @extend %bc-blue-2e;
+
     transform: scale(0.98);
   }
 }

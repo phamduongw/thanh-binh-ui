@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 
 import classNames from 'classnames/bind';
 import styles from './OurGuarantee.module.scss';
@@ -20,16 +20,6 @@ const GuaranteeCard = ({ icon: Icon, title, content }) => {
   const detailRef = useRef();
   const [isDetailOpen, setIsDetailOpen] = useState(false);
 
-  useEffect(() => {
-    detailRef.current.style.height = `${detailRef.current.scrollHeight}px`;
-    const timeoutId = isDetailOpen
-      ? setTimeout(setHeightToAuto, 300)
-      : setTimeout(disableStyleInline, 0);
-    return () => {
-      clearTimeout(timeoutId);
-    };
-  }, [isDetailOpen]);
-
   const setHeightToAuto = useCallback(() => {
     detailRef.current.style.height = 'auto';
   }, []);
@@ -39,13 +29,17 @@ const GuaranteeCard = ({ icon: Icon, title, content }) => {
   }, []);
 
   const handleOpenDetail = () => {
+    detailRef.current.style.height = `${detailRef.current.scrollHeight}px`;
+    isDetailOpen
+      ? setTimeout(disableStyleInline, 0)
+      : setTimeout(setHeightToAuto, 300);
     setIsDetailOpen(!isDetailOpen);
   };
 
   return (
     <article
       onClick={handleOpenDetail}
-      className={cx('card', 'card-effect', 'guarantee-card')}
+      className={cx('card', 'guarantee-card')}
     >
       <div className={cx('card-header')}>
         <div className={cx('card-heading')}>
