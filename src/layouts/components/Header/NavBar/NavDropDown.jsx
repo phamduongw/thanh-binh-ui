@@ -86,7 +86,7 @@ const NavDropDown = memo(({ isAnimated, pathname, handleCloseMenu }) => {
   }, [isServicesOpen]);
 
   return (
-    <div className={cx('wrapper')}>
+    <div className="relative">
       <Button
         ref={toggleRef}
         onClick={handleToggleServices}

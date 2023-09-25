@@ -18,7 +18,6 @@
   }
 
   transition: transform 0.5s;
-  will-change: transform;
 }
 
 .slider-card {
@@ -104,10 +103,9 @@
   @extend %bg-white-fc;
   @extend %br-99;
   @extend %card-box-shadow;
+  @extend %transition-transform-200;
 
   width: 56px;
-  transition: transform 0.2s;
-  will-change: transform;
 
   &:hover {
     transform: scale(0.95);

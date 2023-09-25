@@ -10,9 +10,9 @@ import { PlusIcon } from '~/components/Icons';
 
 import GUARANTEES from '~/data/GUARANTEES';
 
-import guarantee500 from '~/assets/images/home/guarantee500.jpg';
-import guarantee800 from '~/assets/images/home/guarantee800.jpg';
-import guarantee1044 from '~/assets/images/home/guarantee1044.jpg';
+import guarantee_500 from '~/assets/images/home/guarantee_500.jpg';
+import guarantee_800 from '~/assets/images/home/guarantee_800.jpg';
+import guarantee_1044 from '~/assets/images/home/guarantee_1044.jpg';
 
 const cx = classNames.bind(styles);
 
@@ -68,11 +68,14 @@ const GuaranteeList = () => (
 );
 
 const OurGuarantee = () => (
-  <section className={cx('section-container-grid', 'grid-layout')}>
+  <section
+    className={cx('section-container-grid', 'normal-padding', 'grid-layout')}
+  >
     <Image
-      srcSet={`${guarantee500} 500w, ${guarantee800} 800w, ${guarantee1044} 1044w`}
+      w100
+      srcSet={`${guarantee_500} 500w, ${guarantee_800} 800w, ${guarantee_1044} 1044w`}
       sizes="(max-width: 479px) 100vw, (max-width: 767px) 93vw, (max-width: 991px) 520px, 46vw"
-      src={guarantee1044}
+      src={guarantee_1044}
       alt="guarantee"
       className={cx('rounded-image', 'guarantee-image')}
     />

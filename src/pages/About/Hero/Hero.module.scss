@@ -1,0 +1,25 @@
+@import '~/sass/main';
+
+.stats-wrap {
+  @extend %grid;
+  @extend %column-gap-24;
+  @extend %row-gap-28;
+  @extend %max-width-808;
+
+  @include media($sm) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.stats {
+  @extend %flex-col;
+  @extend %text-center;
+
+  row-gap: 3px;
+}
+
+.stats-number {
+  @extend %text-blue-2e;
+  @extend %font-size-h1;
+  @extend %text-700;
+}

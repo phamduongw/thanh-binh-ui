@@ -391,12 +391,12 @@ export const CheckIcon = () => (
   </svg>
 );
 
-export const PlayIcon = () => (
+export const PlayIcon = ({ className }) => (
   <svg
-    width="90"
     viewBox="0 0 150 149"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    className={className}
   >
     <path
       d="M0 74.093C0 33.1726 33.1726 0 74.093 0H75.907C116.827 0 150 33.1726 150 74.093V74.093C150 115.013 116.827 148.186 75.907 148.186H74.093C33.1726 148.186 0 115.013 0 74.093V74.093Z"

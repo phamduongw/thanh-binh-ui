@@ -1,19 +1,19 @@
 const routes = {
   home: {
-    path: '/',
+    path: '/home',
     title: 'Trang chủ',
   },
   services: {
-    path: '/dich-vu',
+    path: '/services',
     title: 'Dịch vụ',
     slugs: ['in-sach', 'in-catalogue', 'in-lich', 'in-tap-chi', 'in-hop-qua'],
   },
   about: {
-    path: '/gioi-thieu',
+    path: '/about',
     title: 'Giới thiệu',
   },
   blog: {
-    path: '/tin-tuc',
+    path: '/blog',
     title: 'Tin tức',
     slugs: [
       '5-steps-to-achieving-business-goals',
@@ -24,8 +24,12 @@ const routes = {
     ],
   },
   contact: {
-    path: '/lien-he',
+    path: '/contact',
     title: 'Liên hệ',
+  },
+  'not-found': {
+    path: '/not-found',
+    title: 'Trang này không tồn tại',
   },
 };
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
 import CallToAction from '~/components/CallToAction';
@@ -7,6 +7,8 @@ import Hero from './Hero';
 import OtherServices from './OtherServices';
 
 import SERVICES from '~/data/SERVICES';
+
+import config from '~/config';
 
 const getServiceDetail = (slug) => {
   switch (slug) {
@@ -25,6 +27,7 @@ const getServiceDetail = (slug) => {
 
 const ServiceDetail = () => {
   const { slug } = useParams();
+  const navigate = useNavigate();
 
   const [
     { id: currentId, icon, title, subtitle, descriptions, srcSet, src },
@@ -32,7 +35,12 @@ const ServiceDetail = () => {
   ] = useState(SERVICES[0]);
 
   useEffect(() => {
-    setData(getServiceDetail(slug));
+    const data = getServiceDetail(slug);
+    if (data) {
+      setData(data);
+    } else {
+      navigate(config.routes['not-found'].path);
+    }
   }, [slug]);
 
   return (

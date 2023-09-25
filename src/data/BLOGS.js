@@ -1,8 +1,8 @@
-import blog1 from '~/assets/images/home/blog1.svg';
-import blog2 from '~/assets/images/home/blog2.svg';
-import blog3 from '~/assets/images/home/blog3.svg';
-import blog4 from '~/assets/images/home/blog4.svg';
-import blog5 from '~/assets/images/home/blog5.svg';
+import blog_1 from '~/assets/images/home/blog_1.svg';
+import blog_2 from '~/assets/images/home/blog_2.svg';
+import blog_3 from '~/assets/images/home/blog_3.svg';
+import blog_4 from '~/assets/images/home/blog_4.svg';
+import blog_5 from '~/assets/images/home/blog_5.svg';
 
 import config from '~/config';
 
@@ -12,7 +12,7 @@ const PATH = BLOG.path + '/';
 const BLOGS = [
   {
     to: PATH + BLOG.slugs[0],
-    poster: blog1,
+    poster: blog_1,
     tag: 'Business',
     title: '5 Steps To Achieving Your Business Goals',
     excerpt:
@@ -20,7 +20,7 @@ const BLOGS = [
   },
   {
     to: PATH + BLOG.slugs[1],
-    poster: blog2,
+    poster: blog_2,
     tag: 'Office Space',
     title: 'How Much Office Space Do You Need Per Person',
     excerpt:
@@ -28,7 +28,7 @@ const BLOGS = [
   },
   {
     to: PATH + BLOG.slugs[2],
-    poster: blog3,
+    poster: blog_3,
     tag: 'Business',
     title: 'Managing Your Mail Box',
     excerpt:
@@ -36,7 +36,7 @@ const BLOGS = [
   },
   {
     to: PATH + BLOG.slugs[3],
-    poster: blog4,
+    poster: blog_4,
     tag: 'Virtual Office',
     title: 'What is a Virtual Office and How Does it Work?',
     excerpt:
@@ -44,7 +44,7 @@ const BLOGS = [
   },
   {
     to: PATH + BLOG.slugs[4],
-    poster: blog5,
+    poster: blog_5,
     tag: 'Coworking',
     title: 'How Coworking Spaces Promote Creativity',
     excerpt:

@@ -5,9 +5,9 @@ import Button from '~/components/Button';
 import Image from '~/components/Image';
 import Paragraph from '~/components/Paragraph';
 
-import hero500 from '~/assets/images/home/hero500.png';
-import hero800 from '~/assets/images/home/hero800.png';
-import hero1204 from '~/assets/images/home/hero1204.png';
+import hero_500 from '~/assets/images/home/hero_500.png';
+import hero_800 from '~/assets/images/home/hero_800.png';
+import hero_1204 from '~/assets/images/home/hero_1204.png';
 
 import config from '~/config';
 
@@ -35,9 +35,9 @@ const Hero = () => (
       </div>
     </div>
     <Image
-      srcSet={`${hero500} 500w, ${hero800} 800w, ${hero1204} 1204w`}
+      srcSet={`${hero_500} 500w, ${hero_800} 800w, ${hero_1204} 1204w`}
       sizes="(max-width: 479px) 100vw, (max-width: 767px) 83vw, (max-width: 991px) 602px, 47vw"
-      src={hero1204}
+      src={hero_1204}
       alt="hero"
       className={cx('hero-image')}
     />

@@ -71,7 +71,6 @@ textarea {
   outline: none;
   font: inherit;
   transition: border-color 0.2s;
-  will-change: border-color;
 
   &:hover {
     @extend %bc-gray-9c;
@@ -87,11 +86,7 @@ textarea {
 }
 
 h1 {
-  @include media($md) {
-    font-size: 4.395rem;
-  }
-
-  font-size: 3.906rem;
+  @extend %font-size-h1;
 }
 
 h2 {
@@ -118,26 +113,6 @@ iframe {
 
 p {
   @extend %line-height-150;
-}
-
-section {
-  @include media($sm) {
-    padding-top: 64px;
-    padding-bottom: 64px;
-  }
-
-  @include media($md) {
-    padding-top: 72px;
-    padding-bottom: 72px;
-  }
-
-  @include media($lg) {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-
-  padding-top: 56px;
-  padding-bottom: 56px;
 }
 
 ul {

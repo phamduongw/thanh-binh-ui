@@ -2,10 +2,10 @@ import config from '~/config';
 
 import About from '~/pages/About';
 import Blog from '~/pages/Blog';
-import BlogDetail from '~/pages/Blog/BlogDetail/';
+import BlogDetail from '~/pages/BlogDetail';
 import Contact from '~/pages/Contact';
 import Home from '~/pages/Home';
-import ServiceDetail from '~/pages/Services/ServiceDetail';
+import ServiceDetail from '~/pages/ServiceDetail';
 import Services from '~/pages/Services';
 
 const publicRoutes = [

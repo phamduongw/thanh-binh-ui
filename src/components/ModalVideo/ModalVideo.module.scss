@@ -16,6 +16,20 @@
 .play-btn {
   @extend %br-99;
   @extend %overflow-hidden;
+
+  @include media($sm) {
+    width: 85px;
+  }
+
+  @include media($md) {
+    width: 100px;
+  }
+
+  @include media($lg) {
+    width: 115px;
+  }
+
+  width: 70px;
 }
 
 .container {

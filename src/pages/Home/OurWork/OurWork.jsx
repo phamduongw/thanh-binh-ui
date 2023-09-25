@@ -7,9 +7,9 @@ import Paragraph from '~/components/Paragraph';
 
 import { CheckIcon } from '~/components/Icons';
 
-import poster500 from '~/assets/images/home/poster500.jpg';
-import poster800 from '~/assets/images/home/poster800.jpg';
-import poster1080 from '~/assets/images/home/poster1080.jpg';
+import poster_500 from '~/assets/images/home/poster_500.jpg';
+import poster_800 from '~/assets/images/home/poster_800.jpg';
+import poster_1080 from '~/assets/images/home/poster_1080.jpg';
 
 import config from '~/config';
 
@@ -46,13 +46,15 @@ const Detail = () => (
 
 const OurWork = () => (
   <section className="section-wrapper">
-    <div className={cx('section-container-grid', 'grid-layout')}>
+    <div
+      className={cx('section-container-grid', 'normal-padding', 'grid-layout')}
+    >
       <Detail />
       <ModalVideo
         h100
-        srcSet={`${poster500} 500w, ${poster800} 800w, ${poster1080} 1080w`}
+        srcSet={`${poster_500} 500w, ${poster_800} 800w, ${poster_1080} 1080w`}
         sizes="(max-width: 479px) 92vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 711px"
-        posterSrc={poster1080}
+        posterSrc={poster_1080}
         videoSrc="https://www.youtube.com/embed/_cWvRzt6Dpk?si=hH6cBgVn0dBIPfT1"
       />
     </div>

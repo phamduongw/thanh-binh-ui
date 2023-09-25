@@ -6,21 +6,21 @@ import {
   ServiceIcon5,
 } from '~/components/Icons';
 
-import service1_500 from '~/assets/images/service-detail/service1-500.jpeg';
-import service1_800 from '~/assets/images/service-detail/service1-800.jpeg';
-import service1_1080 from '~/assets/images/service-detail/service1-1080.jpeg';
-import service2_500 from '~/assets/images/service-detail/service2-500.jpeg';
-import service2_800 from '~/assets/images/service-detail/service2-800.jpeg';
-import service2_1080 from '~/assets/images/service-detail/service2-1080.jpeg';
-import service3_500 from '~/assets/images/service-detail/service3-500.jpeg';
-import service3_800 from '~/assets/images/service-detail/service3-800.jpeg';
-import service3_1080 from '~/assets/images/service-detail/service3-1080.jpeg';
-import service4_500 from '~/assets/images/service-detail/service4-500.jpeg';
-import service4_800 from '~/assets/images/service-detail/service4-800.jpeg';
-import service4_1080 from '~/assets/images/service-detail/service4-1080.jpeg';
-import service5_500 from '~/assets/images/service-detail/service5-500.jpeg';
-import service5_800 from '~/assets/images/service-detail/service5-800.jpeg';
-import service5_1080 from '~/assets/images/service-detail/service5-1080.jpeg';
+import service_1_500 from '~/assets/images/service-detail/service_1_500.jpeg';
+import service_1_800 from '~/assets/images/service-detail/service_1_800.jpeg';
+import service_1_1080 from '~/assets/images/service-detail/service_1_1080.jpeg';
+import service_2_500 from '~/assets/images/service-detail/service_2_500.jpeg';
+import service_2_800 from '~/assets/images/service-detail/service_2_800.jpeg';
+import service_2_1080 from '~/assets/images/service-detail/service_2_1080.jpeg';
+import service_3_500 from '~/assets/images/service-detail/service_3_500.jpeg';
+import service_3_800 from '~/assets/images/service-detail/service_3_800.jpeg';
+import service_3_1080 from '~/assets/images/service-detail/service_3_1080.jpeg';
+import service_4_500 from '~/assets/images/service-detail/service_4_500.jpeg';
+import service_4_800 from '~/assets/images/service-detail/service_4_800.jpeg';
+import service_4_1080 from '~/assets/images/service-detail/service_4_1080.jpeg';
+import service_5_500 from '~/assets/images/service-detail/service_5_500.jpeg';
+import service_5_800 from '~/assets/images/service-detail/service_5_800.jpeg';
+import service_5_1080 from '~/assets/images/service-detail/service_5_1080.jpeg';
 
 import config from '~/config';
 
@@ -41,8 +41,8 @@ const SERVICES = [
       'Praesent consequat ex mi, vel vulputate turpis tincidunt vitae',
       'Nunc id velit tempus ante vestibulum ultrices id nec metus',
     ],
-    srcSet: `${service1_500} 500w, ${service1_800} 800w, ${service1_1080} 1080w`,
-    src: service1_500,
+    srcSet: `${service_1_500} 500w, ${service_1_800} 800w, ${service_1_1080} 1080w`,
+    src: service_1_500,
   },
   {
     id: 2,
@@ -57,8 +57,8 @@ const SERVICES = [
       'Praesent consequat ex mi, vel vulputate turpis tincidunt vitae',
       'Nunc id velit tempus ante vestibulum ultrices id nec metus',
     ],
-    srcSet: `${service2_500} 500w, ${service2_800} 800w, ${service2_1080} 1080w`,
-    src: service2_500,
+    srcSet: `${service_2_500} 500w, ${service_2_800} 800w, ${service_2_1080} 1080w`,
+    src: service_2_500,
   },
   {
     id: 3,
@@ -73,8 +73,8 @@ const SERVICES = [
       'Praesent consequat ex mi, vel vulputate turpis tincidunt vitae',
       'Nunc id velit tempus ante vestibulum ultrices id nec metus',
     ],
-    srcSet: `${service3_500} 500w, ${service3_800} 800w, ${service3_1080} 1080w`,
-    src: service3_500,
+    srcSet: `${service_3_500} 500w, ${service_3_800} 800w, ${service_3_1080} 1080w`,
+    src: service_3_500,
   },
   {
     id: 4,
@@ -89,8 +89,8 @@ const SERVICES = [
       'Praesent consequat ex mi, vel vulputate turpis tincidunt vitae',
       'Nunc id velit tempus ante vestibulum ultrices id nec metus',
     ],
-    srcSet: `${service4_500} 500w, ${service4_800} 800w, ${service4_1080} 1080w`,
-    src: service4_500,
+    srcSet: `${service_4_500} 500w, ${service_4_800} 800w, ${service_4_1080} 1080w`,
+    src: service_4_500,
   },
   {
     id: 5,
@@ -105,8 +105,8 @@ const SERVICES = [
       'Praesent consequat ex mi, vel vulputate turpis tincidunt vitae',
       'Nunc id velit tempus ante vestibulum ultrices id nec metus',
     ],
-    srcSet: `${service5_500} 500w, ${service5_800} 800w, ${service5_1080} 1080w`,
-    src: service5_500,
+    srcSet: `${service_5_500} 500w, ${service_5_800} 800w, ${service_5_1080} 1080w`,
+    src: service_5_500,
   },
 ];
 

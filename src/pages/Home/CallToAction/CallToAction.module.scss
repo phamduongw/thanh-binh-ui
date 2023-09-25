@@ -4,6 +4,7 @@
   @extend %grid;
   @extend %row-gap-22;
   @extend %bg-black-21;
+  @extend %transition-transform-200;
 
   @include media($lg) {
     grid-template-columns: 7fr 5fr;
@@ -14,8 +15,6 @@
   padding: 0 24px 32px;
   margin-top: 30px;
   border-radius: 40px;
-  transition: transform 0.2s;
-  will-change: transform;
 
   &:hover {
     transform: translateY(-4px);

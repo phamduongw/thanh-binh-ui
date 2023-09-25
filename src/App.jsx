@@ -1,10 +1,12 @@
-import { Routes, Route } from 'react-router-dom';
+import { Navigate, Routes, Route } from 'react-router-dom';
 
 import { publicRoutes } from './routes';
 
 import DefaultLayout from './layouts/DefaultLayout';
 
 import NotFound from './pages/NotFound';
+
+import config from './config';
 
 const renderLayout = (Component, title) => <Component title={title} />;
 
@@ -29,7 +31,11 @@ const App = () => (
         ),
       )}
     </Route>
-    <Route path="*" element={<NotFound />} />
+    <Route path="/" element={<Navigate to={config.routes.home.path} />} />
+    <Route
+      path="*"
+      element={<NotFound title={config.routes['not-found'].title} />}
+    />
   </Routes>
 );
 

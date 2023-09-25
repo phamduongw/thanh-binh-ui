@@ -10,10 +10,10 @@ import { NotFoundIcon } from '~/components/Icons';
 
 const cx = classNames.bind(styles);
 
-const NotFound = () => (
+const NotFound = ({ title }) => (
   <div className={cx('wrapper')}>
     <Helmet>
-      <title>Not Found</title>
+      <title>{title}</title>
     </Helmet>
     <div className={cx('container')}>
       <div className={cx('title')}>

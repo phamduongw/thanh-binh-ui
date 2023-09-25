@@ -25,7 +25,6 @@
 
 .transition {
   transition: transform 0.3s ease-in, visibility 0.3s ease-in;
-  will-change: transform, visibility;
 }
 
 .open {

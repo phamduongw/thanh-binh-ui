@@ -11,8 +11,6 @@
 
   display: block;
   padding: 22px 24px;
-  transition: background-color 0.2s, border-color 0.2s, scale 0.2s;
-  will-change: background-color, border-color, scale;
 
   &:hover {
     scale: 0.98;
@@ -22,6 +20,8 @@
     @extend %bg-blue-2e;
     @extend %text-white-fc;
     @extend %bc-blue-2e;
+
+    transition: background-color 0.2s, border-color 0.2s, scale 0.2s;
 
     &:hover {
       @extend %bg-blue-43;
@@ -33,9 +33,11 @@
     @extend %bg-white-fc;
     @extend %bc-gray-9c;
 
+    transition: border-color 0.2s, color 0.2s, scale 0.2s;
+
     &:hover {
-      @extend %bc-blue-2e;
       @extend %text-blue-2e;
+      @extend %bc-blue-2e;
     }
   }
 
