@@ -1,0 +1,6 @@
+@import '~/sass/main';
+
+.content {
+  @extend %max-width-808;
+  @extend %margin-center;
+}

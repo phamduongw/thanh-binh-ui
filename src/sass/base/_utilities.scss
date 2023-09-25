@@ -28,6 +28,12 @@
   width: fit-content;
 }
 
+%max-width-808 {
+  @extend %width-full;
+
+  max-width: 808px;
+}
+
 %height-full {
   height: 100%;
 }
@@ -173,6 +179,19 @@
   @extend %row-gap-24;
 }
 
+%column-gap-28 {
+  column-gap: 28px;
+}
+
+%row-gap-28 {
+  row-gap: 28px;
+}
+
+%gap-28 {
+  @extend %column-gap-28;
+  @extend %row-gap-28;
+}
+
 %column-gap-32 {
   column-gap: 32px;
 }
@@ -244,8 +263,9 @@
 
 // Margin
 
-%margin-0-auto {
-  margin: 0 auto;
+%margin-center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // Background Color
@@ -491,7 +511,7 @@
 
 %container {
   @extend %container-padding;
-  @extend %margin-0-auto;
+  @extend %margin-center;
 
   max-width: $container-max-width;
 }
@@ -504,4 +524,12 @@
 %transition-bg-200 {
   transition: background-color 0.2s;
   will-change: background-color;
+}
+
+%font-size-h1 {
+  @include media($md) {
+    font-size: 4.395rem;
+  }
+
+  font-size: 3.906rem;
 }

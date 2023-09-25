@@ -9,7 +9,7 @@
   @extend %justify-center;
   @extend %row-gap-24;
   @extend %width-fit-content;
-  @extend %margin-0-auto;
+  @extend %margin-center;
   @extend %text-center;
 
   @include media($md) {

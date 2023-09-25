@@ -46,7 +46,9 @@ const Detail = () => (
 
 const OurWork = () => (
   <section className="section-wrapper">
-    <div className={cx('section-container-grid', 'grid-layout')}>
+    <div
+      className={cx('section-container-grid', 'normal-padding', 'grid-layout')}
+    >
       <Detail />
       <ModalVideo
         h100

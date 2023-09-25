@@ -68,8 +68,11 @@ const GuaranteeList = () => (
 );
 
 const OurGuarantee = () => (
-  <section className={cx('section-container-grid', 'grid-layout')}>
+  <section
+    className={cx('section-container-grid', 'normal-padding', 'grid-layout')}
+  >
     <Image
+      w100
       srcSet={`${guarantee500} 500w, ${guarantee800} 800w, ${guarantee1044} 1044w`}
       sizes="(max-width: 479px) 100vw, (max-width: 767px) 93vw, (max-width: 991px) 520px, 46vw"
       src={guarantee1044}

@@ -79,15 +79,13 @@ Slider.displayName = 'Slider';
 const Reviews = () => {
   const sliderRef = useRef();
   return (
-    <section>
-      <div className="section-container-flex">
-        <div className="section-heading">
-          <div className="section-title">Đánh giá</div>
-          <h2>Khách hàng nói gì về Thanh Bình</h2>
-        </div>
-        <Slider ref={sliderRef} />
-        <Navigation sliderRef={sliderRef} />
+    <section className="section-container-flex normal-padding">
+      <div className="section-heading">
+        <div className="section-title">Đánh giá</div>
+        <h2>Khách hàng nói gì về Thanh Bình</h2>
       </div>
+      <Slider ref={sliderRef} />
+      <Navigation sliderRef={sliderRef} />
     </section>
   );
 };

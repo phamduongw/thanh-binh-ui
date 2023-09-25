@@ -7,7 +7,7 @@ import config from '~/config';
 
 const OurServices = () => (
   <section className="section-wrapper">
-    <div className="section-container-flex align-center">
+    <div className="section-container-flex normal-padding align-center">
       <div className="section-heading text-center">
         <div className="section-title">Dịch vụ</div>
         <h2>
