@@ -3,10 +3,10 @@ import { Helmet } from 'react-helmet-async';
 import Blog from './Blog';
 import CallToAction from './CallToAction';
 import Hero from './Hero';
+import Member from './OurTeam';
 import OurGuarantee from './OurGuarantee';
 import OurServices from './OurServices';
 import OurWork from './OurWork';
-import Reviews from './Reviews';
 
 const Home = ({ title }) => (
   <main>
@@ -17,7 +17,7 @@ const Home = ({ title }) => (
     <OurServices />
     <OurGuarantee />
     <OurWork />
-    <Reviews />
+    <Member />
     <CallToAction />
     <Blog />
   </main>

@@ -1,0 +1,38 @@
+@import '~/sass/main';
+
+.wrapper {
+  @extend %width-full;
+}
+
+.slide {
+  @extend %overflow-hidden;
+  @extend %border;
+  @extend %bc-white-e6;
+  @extend %br-20;
+}
+
+.slide-overlay {
+  @extend %absolute;
+  @extend %inset-0;
+  @extend %text-white-fc;
+  @extend %text-center;
+
+  top: 65%;
+  background-image: linear-gradient(to bottom, transparent, #006ad0);
+}
+
+.text-wrap {
+  @extend %absolute;
+  @extend %width-full;
+
+  left: 50%;
+  top: 45%;
+  transform: translateX(-50%);
+}
+
+.name {
+  @extend %text-large;
+  @extend %text-700;
+
+  margin-bottom: 5px;
+}
