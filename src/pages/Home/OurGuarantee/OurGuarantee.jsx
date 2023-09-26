@@ -81,7 +81,7 @@ const OurGuarantee = () => (
     />
     <div className={cx('guarantee-detail')}>
       <div className="section-heading">
-        <div className="section-title">Cam kết</div>
+        <div className="section-title">Sự cam kết</div>
         <h2>Khám phá những lợi ích khi là đối tác của Thanh Bình</h2>
       </div>
       <GuaranteeList />

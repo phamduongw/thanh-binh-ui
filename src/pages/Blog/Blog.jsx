@@ -17,8 +17,8 @@ const Blog = ({ title }) => (
           <div className="section-title">Tin tức</div>
           <h1>Cập nhật thông tin mới nhất</h1>
           <Paragraph gray71>
-            Vestibulum ornare ipsum sapien, vitae mollis augue fringilla sit
-            amet. Donec et mauris et arcu venenatis aliquam non ut dui.
+            Những thông tin sau đây sẽ giúp bạn tiếp cận và hiểu rõ những tin
+            tức, sự kiện mới nhất liên quan đến Thanh Binh Printing.
           </Paragraph>
         </div>
         <BlogList data={[...BLOGS].reverse()} />

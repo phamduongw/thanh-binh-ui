@@ -1,0 +1,72 @@
+@import '~/sass/main';
+
+.image-grid {
+  @extend %grid;
+
+  @include media($md) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+  }
+
+  @include media($lg) {
+    column-gap: 40px;
+  }
+
+  gap: 47.5px;
+  max-width: 1000px;
+}
+
+.column {
+  @extend %flex-col;
+  @extend %row-gap-40;
+
+  @include media($md) {
+    row-gap: 30px;
+
+    &:nth-child(2) {
+      margin-top: 150px;
+    }
+  }
+
+  @include media($lg) {
+    row-gap: 40px;
+  }
+
+  row-gap: 47.5px;
+}
+
+.image-wrap {
+  @extend %relative;
+}
+
+.member-image {
+  @extend %br-20;
+  @extend %card-box-shadow;
+}
+
+.slide-overlay {
+  @extend %absolute;
+  @extend %inset-0;
+  @extend %text-white-fc;
+  @extend %br-20;
+  @extend %text-center;
+
+  top: 65%;
+  background-image: linear-gradient(to bottom, transparent, #006ad0);
+}
+
+.text-wrap {
+  @extend %absolute;
+  @extend %width-full;
+
+  left: 50%;
+  top: 45%;
+  transform: translateX(-50%);
+}
+
+.name {
+  @extend %text-large;
+  @extend %text-700;
+
+  margin-bottom: 5px;
+}

@@ -17,10 +17,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-main {
-  @extend %overflow-hidden;
-}
-
 a,
 button {
   @extend %text-500;
@@ -30,8 +26,6 @@ button {
 }
 
 a {
-  @extend %text-hover-blue-43;
-
   text-decoration: none;
 }
 

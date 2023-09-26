@@ -4,23 +4,23 @@ import styles from './Hero.module.scss';
 import ModalVideo from '~/components/ModalVideo';
 import Paragraph from '~/components/Paragraph';
 
-import about_500 from '~/assets/images/about/about_500.jpg';
-import about_800 from '~/assets/images/about/about_800.jpg';
-import about_1080 from '~/assets/images/about/about_1080.jpg';
-import about_1600 from '~/assets/images/about/about_1600.jpg';
+import about_500 from '~/assets/images/about/about_500.webp';
+import about_800 from '~/assets/images/about/about_800.webp';
+import about_1080 from '~/assets/images/about/about_1080.webp';
+import about_1600 from '~/assets/images/about/about_1600.webp';
 
 const STATS = [
   {
-    number: '10+',
-    text: 'years of service',
+    number: '25+',
+    text: 'năm phục vụ',
   },
   {
-    number: '200+',
-    text: 'happy members',
+    number: '150+',
+    text: 'nhân viên',
   },
   {
-    number: '3',
-    text: 'locations across the city',
+    number: '1',
+    text: 'địa điểm',
   },
 ];
 
@@ -30,11 +30,11 @@ const Hero = () => (
   <section className="thin-padding">
     <div className="section-container-flex align-center">
       <div className="section-heading text-center">
-        <div className="section-title">About Us</div>
-        <h1>About Serviced Office</h1>
+        <div className="section-title">Về chúng tôi</div>
+        <h1>Thanh Binh Printing</h1>
         <Paragraph gray71>
-          Pellentesque leo risus, rhoncus vel nulla quis, commodo pellentesque
-          sem. Nam iaculis auctor urna, nec ornare ex congue non.
+          Thanh Bình là một doanh nghiệp in ấn với hơn 20 năm kinh nghiệm. Chúng
+          tôi luôn cam kết mang đến những sản phẩm chất lượng cho khách hàng.
         </Paragraph>
       </div>
       <ModalVideo

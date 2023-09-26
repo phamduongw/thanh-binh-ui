@@ -9,15 +9,12 @@ import Paragraph from '~/components/Paragraph';
 const cx = classNames.bind(styles);
 
 const BlogCard = ({ poster, tag, title, excerpt, handleLearnMore }) => (
-  <article
-    onClick={handleLearnMore}
-    className={cx('card', 'card-effect', 'blog-card')}
-  >
+  <article onClick={handleLearnMore} className="card card-effect">
     <div className={cx('poster-wrap')}>
-      <Image w100 src={poster} alt="poster" className={cx('poster')} />
+      <Image w100 src={poster} alt="poster" className={cx('poster-image')} />
     </div>
     <div className={cx('card-detail')}>
-      <span>{tag}</span>
+      <span className="blog-tag">{tag}</span>
       <div>{title}</div>
       <Paragraph gray71>{excerpt}</Paragraph>
     </div>
@@ -28,9 +25,9 @@ const BlogList = ({ data }) => {
   const navigate = useNavigate();
   return (
     <div className={cx('collection', 'grid-layout')}>
-      {data.map(({ to, poster, tag, title, excerpt }) => (
+      {data.map(({ id, to, poster, tag, title, excerpt }) => (
         <BlogCard
-          key={to}
+          key={id}
           to={to}
           poster={poster}
           tag={tag}

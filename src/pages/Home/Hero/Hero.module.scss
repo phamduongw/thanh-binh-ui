@@ -3,6 +3,7 @@
 .wrapper {
   @extend %grid;
   @extend %row-gap-40;
+  @extend %align-center;
   @extend %container;
 
   @include media($sm) {
@@ -17,12 +18,15 @@
 
 .heading {
   @extend %flex-col;
-  @extend %algin-self-center;
   @extend %row-gap-32;
 
   @include media(0, $lg) {
     align-items: center;
     text-align: center;
+  }
+
+  @include media($lg) {
+    padding-top: 32.5px;
   }
 }
 

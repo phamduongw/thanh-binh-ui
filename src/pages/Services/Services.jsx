@@ -14,11 +14,11 @@ const Services = ({ title }) => (
     <section className="thin-padding">
       <div className="section-container-flex align-center">
         <div className="section-heading text-center">
-          <div className="section-title">Dịch vụ</div>
+          <div className="section-title">Dịch vụ in ấn</div>
           <h1>Lựa chọn giải pháp in ấn cho doanh nghiệp của bạn</h1>
           <Paragraph gray71>
-            Nam faucibus nisi quis leo eleifend lacinia. Suspendisse vel gravida
-            mi, ut lobortis felis. Nunc molestie dolor ut vehicula viverra.
+            Hãy để Thanh Bình giúp bạn khám phá và tận dụng các giải pháp in ấn
+            đa dạng và tùy chỉnh nhằm đáp ứng mục tiêu của doanh nghiệp.
           </Paragraph>
         </div>
         <ServiceList data={SERVICES} />

@@ -14,9 +14,9 @@ const CallToAction = () => (
     <div className={cx('wrapper')}>
       <CallToActionIcon className={cx('cta-icon')} />
       <div className={cx('heading')}>
-        <h2>Grow your business with us today</h2>
+        <h2>Phát triển doanh nghiệp cùng chúng tôi ngay hôm nay</h2>
         <Button to={config.routes.contact.path} button primary>
-          Let's Get in Touch
+          Liên hệ với Thanh Bình
         </Button>
       </div>
     </div>

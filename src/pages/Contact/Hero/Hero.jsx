@@ -10,15 +10,15 @@ import CONTACTS from '~/data/CONTACTS';
 
 const INPUTS = [
   {
-    title: 'Name*',
+    title: 'Họ và tên*',
     type: 'text',
   },
   {
-    title: 'Email Address*',
+    title: 'Địa chỉ email*',
     type: 'email',
   },
   {
-    title: 'Phone Number*',
+    title: 'Số điện thoại*',
     type: 'text',
   },
 ];
@@ -28,7 +28,7 @@ const cx = classNames.bind(styles);
 const Form = () => {
   const formRef = useRef();
 
-  const [buttonTitle, setButtonTitle] = useState('Send');
+  const [buttonTitle, setButtonTitle] = useState('Gửi yêu cầu');
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = useCallback((event) => {
@@ -49,7 +49,7 @@ const Form = () => {
         </label>
       ))}
       <label className={cx('field')}>
-        <span>Message*</span>
+        <span>Lời nhắn*</span>
         <textarea maxLength="1000" className={cx('message-field')} required />
       </label>
       <Button button primary>
@@ -70,20 +70,25 @@ const Hero = () => (
   >
     <div className={cx('info')}>
       <div className="section-heading">
-        <div className="section-title">Contact Us</div>
-        <h1>Get in touch today!</h1>
+        <div className="section-title">Liên hệ</div>
+        <h1>Kết nối ngay hôm nay</h1>
         <Paragraph gray71>
-          Talk to a professional consultant and book a tour. Discuss options,
-          price, and exclusive offers!
+          Để nhận được sự tư vấn chính xác và có cơ hội sở hữu những ưu đãi độc
+          quyền!
         </Paragraph>
       </div>
       <div className={cx('content')}>
-        {CONTACTS.map(({ icon: Icon, title, content }) => (
-          <div key={title} className={cx('info-card')}>
+        {CONTACTS.map(({ icon: Icon, to, target, title, content }) => (
+          <Button
+            key={title}
+            to={to}
+            target={target}
+            className={cx('info-card')}
+          >
             <Icon className={cx('card-icon')} />
             <div className={cx('card-title')}>{title}</div>
             <div className={cx('card-content')}>{content}</div>
-          </div>
+          </Button>
         ))}
       </div>
     </div>

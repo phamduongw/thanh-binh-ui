@@ -18,13 +18,13 @@ const NotFound = ({ title }) => (
     <div className={cx('container')}>
       <div className={cx('title')}>
         <NotFoundIcon />
-        <h2>Page Not Found</h2>
+        <h2>Không tìm thấy nội dung</h2>
       </div>
       <Paragraph>
-        The page you are looking for doesn't exist or has been moved
+        Trang bạn đang tìm kiếm không tồn tại hoặc đã bị thay đổi đường dẫn
       </Paragraph>
       <Button to="/" button primary>
-        Return Home
+        Trở về trang chủ
       </Button>
     </div>
   </div>

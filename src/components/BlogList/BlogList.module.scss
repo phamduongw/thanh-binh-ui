@@ -8,20 +8,14 @@
   grid-area: span 1 / span 2 / span 1 / span 2;
 }
 
-.blog-card:hover {
-  .poster {
-    transform: scale(1.1);
-  }
-}
-
 .poster-wrap {
   @extend %overflow-hidden;
 
   border-radius: 32px 32px 0 0;
 }
 
-.poster {
-  transition: transform 0.3s;
+.poster-image {
+  max-height: 219.38px;
 }
 
 .card-detail {
@@ -34,17 +28,6 @@
   }
 
   padding: 32px 32px 40px;
-
-  span {
-    @extend %flex;
-    @extend %bg-white-e6;
-    @extend %br-20;
-    @extend %text-blue-2e;
-    @extend %text-small;
-    @extend %text-700;
-
-    padding: 6px 12px;
-  }
 
   div {
     @extend %text-large;

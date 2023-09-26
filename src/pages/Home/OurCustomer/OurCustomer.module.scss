@@ -1,0 +1,11 @@
+@import '~/sass/main';
+
+.slider {
+  @extend %width-full;
+
+  height: 100px;
+}
+
+.slide {
+  @extend %flex-center;
+}

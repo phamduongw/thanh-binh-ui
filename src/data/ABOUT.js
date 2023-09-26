@@ -4,40 +4,40 @@ import Paragraph from '~/components/Paragraph';
 const ABOUT = [
   {
     element: Heading2,
-    content: 'Pellentesque tristique aliquet convallis',
+    content: 'Cam kết về chất lượng',
   },
   {
     element: Paragraph,
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non mi ac nisl vulputate porttitor. Vestibulum in tortor vitae augue fringilla porttitor. Fusce volutpat dictum euismod. Vivamus malesuada lectus vel urna porttitor eleifend.',
+      'Với kinh nghiệm 25 năm trong lĩnh vực in ấn, Công ty in Thanh Bình đang từng bước nỗ lực thay đổi, nâng cao chất lượng sản phẩm và dịch vụ nhằm đạt được sự tin tưởng và ủng hộ từ khách hàng.',
   },
   {
     element: Paragraph,
     content:
-      'Nam a pulvinar ante, et scelerisque arcu. Donec vel euismod sapien, efficitur tristique elit. Mauris tincidunt libero leo, a bibendum magna suscipit non.',
+      'Chúng tôi luôn không ngừng cải tiến, áp dụng công nghệ mới vào dây chuyền sản xuất nhằm nâng cao chất lượng sản phẩm và dịch vụ, đồng thời tăng cường  chuyên nghiệp hóa trong quản lý và điều hành hoạt động sản xuất.',
   },
   {
     element: Heading2,
-    content: 'Mauris in neque',
+    content: 'Tận tâm trong từng sản phẩm',
   },
   {
     element: Paragraph,
     content:
-      'Curabitur suscipit diam nec sem iaculis tincidunt. Aliquam sit amet pretium odio. Nulla et consectetur dolor, et dictum dui. Mauris non malesuada massa. Nam venenatis neque erat, vel sodales erat viverra eget.',
+      'Đối với chúng tôi, mỗi cá nhân trong công ty đều là mắt xích quan trọng nhằm mang đến cho khách hàng những trải nghiệm sản phẩm và dịch vụ tốt nhất. Chúng tôi luôn tự hào bởi sự nỗ lực không ngừng của đội ngũ nhân viên, công nhân và những người lãnh đạo đã góp phần xây dựng nền móng của công ty.',
   },
   {
     element: Heading2,
-    content: 'Duis convallis cursus turpis',
+    content: 'Sứ mệnh phát triển',
   },
   {
     element: Paragraph,
     content:
-      'Nullam tincidunt est a velit scelerisque congue. Nulla placerat vestibulum volutpat. Donec ac quam et nunc cursus pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed nibh orci, interdum et scelerisque at, blandit id odio.',
+      'Công ty in Thanh Bình đã trở thành một trong những đơn vị hàng đầu trong lĩnh vực in ấn tại Việt Nam được khách hàng tin tưởng và lựa chọn. Chúng tôi luôn đặt lợi ích của khách hàng lên hàng đầu và cam kết cung cấp các sản phẩm, dịch vụ in ấn chất lượng nhất đáp ứng mọi yêu cầu của khách hàng.',
   },
   {
     element: Paragraph,
     content:
-      'Donec laoreet velit ac magna malesuada mattis. Praesent feugiat est vel placerat mollis. Cras feugiat magna id diam convallis vulputate. Fusce et vestibulum magna.',
+      'Chúng tôi không chỉ đặt mục tiêu cao về chất lượng sản phẩm và dịch vụ, mà còn luôn nỗ lực để thúc đẩy sự sáng tạo và phát triển bền vững. Chúng tôi cam kết định hình tương lai bằng cách áp dụng các giải pháp tiên tiến và tiếp tục đóng góp cho sự phát triển của cộng đồng và môi trường xung quanh.',
   },
 ];
 

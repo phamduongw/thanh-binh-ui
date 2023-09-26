@@ -15,8 +15,8 @@ const Blog = () => (
     className={cx('section-container-grid', 'normal-padding', 'grid-layout')}
   >
     <div className="section-heading">
-      <div className="section-title">Blog</div>
-      <h2>Keep up to date!</h2>
+      <div className="section-title">Bản tin mỗi ngày</div>
+      <h2>Cập nhật thường xuyên!</h2>
     </div>
     <Button
       to={config.routes.blog.path}
@@ -24,7 +24,7 @@ const Blog = () => (
       secondary
       className={cx('view-all-btn')}
     >
-      View All Articles
+      Tìm hiểu thêm
     </Button>
     <BlogList data={BLOGS.slice(-3).reverse()} />
   </section>

@@ -10,6 +10,7 @@ const Button = forwardRef(
   (
     {
       to,
+      target,
       button,
       primary,
       secondary,
@@ -30,6 +31,7 @@ const Button = forwardRef(
 
     if (to) {
       props.to = to;
+      props.target = target;
       Comp = Link;
     }
 

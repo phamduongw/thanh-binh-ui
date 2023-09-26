@@ -32,8 +32,20 @@
   background-repeat: no-repeat;
 }
 
-.hero-image {
-  border-radius: 24px;
+.slider {
+  @extend %br-24;
+}
+
+.slide {
+  width: 100% !important;
+}
+
+.product-image {
+  @extend %br-24;
+
+  @include media($lg) {
+    height: 100%;
+  }
 }
 
 .price {

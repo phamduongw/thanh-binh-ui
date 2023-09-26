@@ -9,9 +9,9 @@ const OurServices = () => (
   <section className="section-wrapper">
     <div className="section-container-flex normal-padding align-center">
       <div className="section-heading text-center">
-        <div className="section-title">Dịch vụ</div>
+        <div className="section-title">Dịch vụ in ấn</div>
         <h2>
-          Giải pháp in ấn linh hoạt - Hãy lựa chọn dich vụ phù hợp nhất với bạn
+          Giải pháp in ấn linh hoạt - Hãy lựa chọn dịch vụ phù hợp nhất với bạn
         </h2>
       </div>
       <ServiceList data={SERVICES} />

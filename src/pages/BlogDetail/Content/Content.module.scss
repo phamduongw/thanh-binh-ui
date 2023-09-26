@@ -1,0 +1,30 @@
+@import '~/sass/main';
+
+.wrapper {
+  @extend %container-padding;
+}
+
+.content {
+  @extend %flex-col;
+  @extend %row-gap-32;
+  @extend %margin-center;
+
+  max-width: 808px;
+}
+
+.heading {
+  @extend %flex-col;
+  @extend %row-gap-24;
+}
+
+.meta-wrap {
+  @extend %flex;
+  @extend %justify-between;
+  @extend %align-center;
+  @extend %column-gap-16;
+}
+
+.date {
+  @extend %text-gray-71;
+  @extend %text-500;
+}

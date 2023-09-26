@@ -19,7 +19,7 @@ const Actions = memo(({ desktop, responsive, handleCloseMenu }) => (
     })}
   >
     <Button
-      to={config.routes.contact.path}
+      to="tel:+84 979-336-872"
       onClick={handleCloseMenu}
       className={cx('contact')}
     >

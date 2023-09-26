@@ -50,6 +50,11 @@
   @include media($lg) {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    &.desktop-no-padding {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
   }
 
   padding-top: 28px;
@@ -189,4 +194,15 @@
   @extend %text-blue-2e;
   @extend %text-500;
   @extend %text-hover-blue-43;
+}
+
+.blog-tag {
+  @extend %flex;
+  @extend %bg-white-e6;
+  @extend %br-20;
+  @extend %text-blue-2e;
+  @extend %text-small;
+  @extend %text-700;
+
+  padding: 6px 12px;
 }

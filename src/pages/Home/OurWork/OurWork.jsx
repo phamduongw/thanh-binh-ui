@@ -7,9 +7,9 @@ import Paragraph from '~/components/Paragraph';
 
 import { CheckIcon } from '~/components/Icons';
 
-import poster_500 from '~/assets/images/home/poster_500.jpg';
-import poster_800 from '~/assets/images/home/poster_800.jpg';
-import poster_1080 from '~/assets/images/home/poster_1080.jpg';
+import poster_500 from '~/assets/images/home/poster_500.webp';
+import poster_800 from '~/assets/images/home/poster_800.webp';
+import poster_1080 from '~/assets/images/home/poster_1080.webp';
 
 import config from '~/config';
 
@@ -21,9 +21,7 @@ const Detail = () => (
   <div className={cx('work-detail')}>
     <div className="section-heading">
       <div className="section-title">Về chúng tôi</div>
-      <h2>
-        Thanh Bình - 25 năm một chặng đường thay đổi để hòa nhập và phát triển
-      </h2>
+      <h2>Chặng đường 25 năm để thay đổi, hòa nhập và phát triển toàn diện</h2>
       <Paragraph gray71>
         Nhờ những thay đổi này, Thanh Bình đã và đang tiếp tục phát triển để đưa
         ra những sản phẩm in ấn chất lượng cao, đáp ứng mọi nhu cầu của khách

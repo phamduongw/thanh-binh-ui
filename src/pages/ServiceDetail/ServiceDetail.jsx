@@ -10,32 +10,19 @@ import SERVICES from '~/data/SERVICES';
 
 import config from '~/config';
 
-const getServiceDetail = (slug) => {
-  switch (slug) {
-    case 'in-sach':
-      return SERVICES[0];
-    case 'in-catalogue':
-      return SERVICES[1];
-    case 'in-lich':
-      return SERVICES[2];
-    case 'in-tap-chi':
-      return SERVICES[3];
-    case 'in-hop-qua':
-      return SERVICES[4];
-  }
-};
-
 const ServiceDetail = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
 
   const [
-    { id: currentId, icon, title, subtitle, descriptions, srcSet, src },
+    { id: currentId, icon, title, subtitle, descriptions, products },
     setData,
   ] = useState(SERVICES[0]);
 
   useEffect(() => {
-    const data = getServiceDetail(slug);
+    const data = SERVICES.find(
+      (service) => service.to == config.routes.services.path + '/' + slug,
+    );
     if (data) {
       setData(data);
     } else {
@@ -53,8 +40,7 @@ const ServiceDetail = () => {
         title={title}
         subtitle={subtitle}
         descriptions={descriptions}
-        srcSet={srcSet}
-        src={src}
+        products={products}
       />
       <OtherServices
         data={SERVICES.filter(({ id }) => id !== currentId)

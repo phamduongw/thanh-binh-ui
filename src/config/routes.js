@@ -18,9 +18,7 @@ const routes = {
     slugs: [
       '5-steps-to-achieving-business-goals',
       'how-much-office-space-do-you-need-per-person',
-      'managing-your-mail-box',
-      'what-is-a-virtual-office',
-      'how-coworking-spaces-promote-creativity',
+      'lich-su-phat-trien-nghanh-in-an',
     ],
   },
   contact: {

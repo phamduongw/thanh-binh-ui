@@ -14,7 +14,7 @@
 }
 
 .play-btn {
-  @extend %br-99;
+  @extend %br-999;
   @extend %overflow-hidden;
 
   @include media($sm) {

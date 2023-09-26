@@ -52,7 +52,7 @@ const DropDownServices = memo(
         onClick={handleCloseMenu}
         className={cx('view-all-btn')}
       >
-        View All Services
+        Xem tất cả
       </Button>
     </div>
   )),
