@@ -43,6 +43,7 @@ const Hero = () => (
         sizes="100vw"
         posterSrc={about_1600}
         videoSrc="https://www.youtube.com/embed/xfCJF1NhXdA?si=8jZi9ha4RB6lOb8i"
+        isFeatureDisable={true}
       />
       <div className={cx('stats-wrap')}>
         {STATS.map(({ number, text }) => (

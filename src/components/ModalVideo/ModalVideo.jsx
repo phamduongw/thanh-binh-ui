@@ -35,14 +35,24 @@ const Poster = memo(({ h100, w100, srcSet, sizes, src, handleCloseModal }) => (
 
 Poster.displayName = 'Poster';
 
-const ModalVideo = ({ h100, w100, srcSet, sizes, posterSrc, videoSrc }) => {
+const ModalVideo = ({
+  h100,
+  w100,
+  srcSet,
+  sizes,
+  posterSrc,
+  videoSrc,
+  isFeatureDisable,
+}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isIframeLoading, setIsLoading] = useState(false);
 
   const handleOpenModal = useCallback(() => {
-    setIsModalOpen(true);
-    setIsLoading(true);
-    document.body.style = 'overflow: hidden; touch-action: none';
+    if (!isFeatureDisable) {
+      setIsModalOpen(true);
+      setIsLoading(true);
+      document.body.style = 'overflow: hidden; touch-action: none';
+    }
   }, []);
 
   const handleCloseModal = useCallback(() => {
